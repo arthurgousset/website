@@ -1,0 +1,5 @@
+My name is Arthur. I love building data systems that support impactful decision-making and write about software, data, and investing on my blog Between Two Sigma.
+I currently help VCs develop quantitative approaches to early-stage investing and help them get a better return on their data. If you are interested in this area, the following article by Tribe Capital is a great place to start. 
+I'm also an Advisory Board Member at Kontrol, an Austrian 🇦🇹 software start-up that works on formal verification of autonomous systems in drones and cars. Here is a short explainer video describing our value proposition if you are interested.
+On the side, I spend most days learning about algorithms, mathematics and computing at ETH Zurich🇨🇭.
+I previously worked on the investment team at ATRUM, a private investment office in Mayfair (London 🇬🇧) that specialises in venture capital and growth equity investments. Before that, I graduated with highest honours in Economics, was this start-up's first data science intern, briefly interned in M&A at this investment bank and competed nationally in Triathlon 🇩🇪.

@@ -1,17 +1,60 @@
 baseURL: 'http://example.org/'
 languageCode: en-us
-title: Arthur Gousset
+title: 0xArthur.xyz 🧑‍🚀
 theme: PaperMod
 
+
 params:
-    homeInfoParams:
-        Title: 0xArthur
-        Content: My name is Arthur Gousset, 
+
+
+    ShowReadingTime: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    disableScrollToTop: true
+    showtoc: true
+    tocopen: false
+
+    # Proile Mode
+    profileMode:
+        enabled: true
+        title: "Arthur Gousset" # optional default will be site title
+        subtitle: "Crypto Product Management 👨‍💻"
+        imageUrl: "https://pbs.twimg.com/profile_images/1433747018468450305/EvOLBFZE_400x400.jpg" # optional
+        imageTitle: # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+          - name: Blog
+            url: "/posts"
+
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "https://pbs.twimg.com/profile_images/1433747018468450305/EvOLBFZE_400x400.jpg"
+
 
     socialIcons: # optional
-        - name: linkedin
-          url: "https://www.linkedin.com/in/arthur-gousset/"
         - name: twitter
           url: "https://twitter.com/Arthur__Gousset"
         - name: github
           url: "https://github.com/arthurgousset"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/arthur-gousset/"
+
+    editPost:
+        URL: "https://github.com/opensigma/0xArthur-website/blob/main/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+    
+menu:
+    main:
+        - identifier: categories
+          name: Archive
+          url: /posts
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
