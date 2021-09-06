@@ -5,8 +5,8 @@ theme: PaperMod
 
 params:
     homeInfoParams:
-        Title: Welcome
-        Content: My name is Arthur
+        Title: 0xArthur
+        Content: My name is Arthur Gousset, 
 
     socialIcons: # optional
         - name: linkedin
