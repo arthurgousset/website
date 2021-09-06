@@ -1,0 +1,17 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Arthur Gousset
+theme: PaperMod
+
+params:
+    homeInfoParams:
+        Title: Welcome
+        Content: My name is Arthur
+
+    socialIcons: # optional
+        - name: linkedin
+          url: "https://www.linkedin.com/in/arthur-gousset/"
+        - name: twitter
+          url: "https://twitter.com/Arthur__Gousset"
+        - name: github
+          url: "https://github.com/arthurgousset"
