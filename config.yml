@@ -1,11 +1,10 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://blog.opensigma.org/0xArthur-website/'
 languageCode: en-us
 title: 0xArthur.xyz 🧑‍🚀
 theme: PaperMod
 
 
 params:
-
 
     ShowReadingTime: true
     ShowPostNavLinks: true
