@@ -24,8 +24,7 @@ params:
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
-          - name: Blog
-            url: "/posts"
+
 
 
     assets:
