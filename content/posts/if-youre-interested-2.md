@@ -31,9 +31,24 @@ https://cdixon.org/2013/08/04/the-idea-maze/
 
 ### Formulating Problem Statements 
 
-
 *What's a HiPPo?*
 > 
 
 
 ### Good and Bad PM
+
+[Good Product Manager/Bad Product Manager](https://a16z.com/2012/06/15/good-product-managerbad-product-manager/)
+
+### PURSUIT: Framework for your next great product idea.
+
+[PURSUIT: Framework for your next great product idea](
+https://uxdesign.cc/pursuit-a-product-framework-for-product-y-folks-9575244fe9d2)
+### Visualising maths 
+
+http://worrydream.com/KillMath/  
+
+### Uniswap v3 in a nutshell
+
+https://www.desmos.com/calculator/qknhcrktmz
+
+{{< tweet 1431048039230234627 >}}
