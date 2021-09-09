@@ -1,8 +1,9 @@
 baseURL: 'http://0xarthur.xyz/'
 languageCode: en-us
-title: 0xArthur.xyz 🧑‍🚀
+title: Home
 theme: PaperMod
 
+buildDrafts: false
 
 params:
 
@@ -18,7 +19,7 @@ params:
     profileMode:
         enabled: true
         title: "Arthur Gousset" # optional default will be site title
-        subtitle: "Crypto Product Management 👨‍💻"
+        subtitle: "Working on identity for Celo 🧑‍🚀"
         imageUrl: "https://pbs.twimg.com/profile_images/1433747018468450305/EvOLBFZE_400x400.jpg" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
