@@ -43,7 +43,7 @@ params:
           url: "https://www.linkedin.com/in/arthur-gousset/"
 
     editPost:
-        URL: "https://github.com/opensigma/0xArthur-website/blob/main/content"
+        URL: "https://github.com/0xarthurxyz/0xArthurxyz.github.io/blob/main/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
     
