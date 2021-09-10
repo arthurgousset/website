@@ -22,7 +22,7 @@ params:params:
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     disableScrollToTop: true
-    hideSummary: false
+    hideSummary: true
     showtoc: true
     tocopen: false
 
