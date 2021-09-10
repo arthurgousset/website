@@ -10,7 +10,7 @@ buildExpired: false
 
 googleAnalytics: UA-152084126-5
 
-params:params:
+params:
     env: production
     title: 0xArthur.xyz
     author: Me
