@@ -24,6 +24,9 @@ menu:
         - name: Search
           url: search/
           weight: 2
+        - name: Who Dis?
+          url: about
+          weight: 3
 
 
 taxonomies:
@@ -59,8 +62,6 @@ params:
         buttons:
             - name: Blog
               url: posts/
-            - name: About
-              url: about
 
     # Uncomment if you want posts on the homepage instead of profileMode
     # homeInfoParams:
