@@ -2,9 +2,7 @@
 title: "If You're Interested #1"
 date: 2021-09-06T23:33:34+01:00
 draft: true
-taxonomies:
-  category: IYI
-  tag: test
+tags: ["shortcodes", "privacy"]
 ---
 
 ### PM perf evaluations

@@ -1,6 +1,7 @@
 baseURL: 'http://0xarthur.xyz/'
 languageCode: en-us
 title: Home
+paginate: 5
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -9,6 +10,25 @@ buildFuture: false
 buildExpired: false
 
 googleAnalytics: UA-152084126-5
+
+menu:
+    main:
+        - identifier: categories
+          name: Archive
+          url: archives
+          weight: 10
+        # - identifier: Tags
+        #   name: Tags
+        #   url: /tags
+        #   weight: 20
+        - name: Search
+          url: search/
+          weight: 10
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
 
 params:
     env: production
@@ -23,10 +43,10 @@ params:
     ShowCodeCopyButtons: true
     disableScrollToTop: true
     hideSummary: true
-    showtoc: true
+    showtoc: false
     tocopen: false
 
-    # Proile Mode
+    # Profile Mode
     profileMode:
         enabled: true
         title: "Arthur Gousset" # optional default will be site title
@@ -36,8 +56,22 @@ params:
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
+            - name: Blog
+              url: posts/
+            # - name: Tags
+            #   url: tags
 
+    # Uncomment if you want posts on the homepage instead of profileMode
+    # homeInfoParams:
+    #     Title: "0xArthur.xyz"
+    #     Content: >
+    #         Welcome to demo of hugo's theme PaperMod.
 
+    #         - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+           
+    #         - Do give a 🌟 on Github !
+
+    #         - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 
     assets:
         # disableHLJS: true # to disable highlight.js
@@ -57,14 +91,9 @@ params:
         URL: "https://github.com/0xarthurxyz/0xArthurxyz.github.io/blob/main/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
-    
-menu:
-    main:
-        - identifier: categories
-          name: Archive
-          url: /posts
-          weight: 10
-        - identifier: tags
-          name: tags
-          url: /tags/
-          weight: 20
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
