@@ -21,9 +21,9 @@ menu:
         #   name: Tags
         #   url: /tags
         #   weight: 20
-        - name: Search
-          url: search/
-          weight: 2
+        # - name: Search
+        #   url: search/
+        #   weight: 2
         - name: Who Dis?
           url: about
           weight: 3
