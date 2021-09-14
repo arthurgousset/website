@@ -50,6 +50,9 @@ params:
     showtoc: false
     tocopen: false
 
+    # Maths typesetting
+    math: true
+
     # Profile Mode
     profileMode:
         enabled: true

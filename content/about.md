@@ -4,7 +4,7 @@ title: "Who Dis?"
 draft: false
 ---
 
-👋 Hi, I'm Arthur. I build products that maximise impact 🗺💡⚙️ 🚀
+👋 Hi, I'm Arthur. I love building products that maximise impact 🗺💡⚙️ 🚀
 
 Why? Because choosing a career might be the most important ethical decision of my life.
 > From adulthood, you’ll spend almost half your waking hours on your career. You have about 80,000 hours in your career: 40 hours per week, 50 weeks per year, for 40 years. If you can increase the positive impact of those hours just a little, it will probably have a bigger impact than changes to any other parts of your life. ([source](https://80000hours.org/make-a-difference-with-your-career/))
