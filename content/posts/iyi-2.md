@@ -1,5 +1,5 @@
 ---
-title: "If You're Interested #2"
+title: "If You're Interested (Week 2)"
 date: 2021-09-06T23:33:34+01:00
 draft: true
 ---
@@ -55,9 +55,6 @@ https://www.desmos.com/calculator/qknhcrktmz
 ### Career Advice Threads
 
 {{< tweet 1406269387602944004 >}}
-
-
-
 
 So this will a thread on career advice, mostly because I get enraged seeing absolute nonsense like https://twitter.com/sweatystartup/status/1405205780329078793. To start off, I ain't anyone. I'm well off for my age group, and no I'm not trying to sell you anything. I've done a few things quite well, and a few things pretty piss poorly. I've also now operated in three separate fields (or at least ideas of fields) - software engineering, finance, and bioinformatics. The beauty of this thread is it really isn't some vague bullshit where I tell you you're not working hard enough.
 
