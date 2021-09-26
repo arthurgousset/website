@@ -17,10 +17,12 @@ According to [80,000 Hours](https://80000hours.org/make-a-difference-with-your-c
 
 ### Currently
 
-I'm a product manager at [cLabs](https://clabs.co/) and spend my days working on [identity primitives](https://docs.celo.org/celo-codebase/protocol/identity) for the [Celo](https://celo.org/) blockchain. If you're interested in this area, please feel free to [DM me](https://twitter.com/Arthur__Gousset) or pop your head into our [Discord server](https://discord.gg/mD7gKGDuQT) to lurk around.
+I'm a crypto product manager at [cLabs](https://clabs.co/) (🧑‍🚀) working on [identity](https://docs.celo.org/celo-codebase/protocol/identity) for the [Celo](https://celo.org/) blockchain 🌌
 
-I'm also a board member on the advisor board of [Kontrol](https://www.kontrol.tech/), a software start-up that works on [formal verification](https://en.wikipedia.org/wiki/Formal_verification) of autonomous systems in drones and cars.
+I'm also a board member on the advisor board of [Kontrol](https://www.kontrol.tech/), a software start-up that works on [formal verification](https://en.wikipedia.org/wiki/Formal_verification) of autonomous systems (💭) in drones and cars.
 
 ### Previously
 
-I developed quantitative approaches to early-stage investing (👨‍💻) and worked on the investment team at [Atrum](https://www.linkedin.com/company/atrumglobal/about/), a private investment office in London (🇬🇧), which specialises in venture and growth equity investments. I have a background in [computer](https://inf.ethz.ch/department.html) [science](https://www.dcs.bbk.ac.uk/about/) and [economics](http://www.bristol.ac.uk/economics/about/).
+I developed quantitative approaches to early-stage investing (👨‍💻) and worked on the investment team at [Atrum](https://www.linkedin.com/company/atrumglobal/about/), a private investment office in London (🇬🇧), which specialises in venture and growth equity investments.
+
+I have a background in computer science and economics, and spent some time studying at ETH Zurich, Birkbeck College, and the University of Bristol.
