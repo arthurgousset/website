@@ -4,7 +4,7 @@ title: "Who Dis?"
 draft: false
 ---
 
-Hi, I'm [Arthur](https://twitter.com/Arthur__Gousset) 👋 I love building products that maximise impact 🗺💡⚙️ 🚀
+👋 I'm [Arthur](https://twitter.com/Arthur__Gousset).  I love building products that maximise impact 🚀
 
 Why? Because choosing a career might be the most important ethical decision of my life.
 
