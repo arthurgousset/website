@@ -2,7 +2,7 @@
 title: "👀 If You're Interested (2nd week of Sep, 2021)"
 date: 2021-09-06T23:33:34+01:00
 draft: false
-tags: ["product management", "analytics", "web3"]
+tags: ["pm", "HiPPos", "problem statements", "crypto analytics"]
 ---
 
 _Also PM ratings, HiPPos, problem statements, and community-driven analytics._
