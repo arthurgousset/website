@@ -1,79 +1,69 @@
 ---
-title: "If You're Interested (Week 2)"
-date: 2021-09-06T23:33:34+01:00
-draft: true
+title: "👀 If You're Interested (3rd week of Sep, 2021)"
+date: 2021-09-13T12:33:34+01:00
+draft: false
+tags: ["idea mazes", "startup games", "MEV"]
 ---
 
-### MEV Senpai
+_Also idea mazes, startup games, MEV_
 
-{{< tweet 1410678477016252422>}}
+## Chris Dixon's Idea Maze
 
-https://uncommoncore.co/29-interview-with-a-searcher-with-mev-senpai-and-hasu/
+A colleague kindly shared this article with me: ["The idea maze" by Chris Dixon [2013]](https://cdixon.org/2013/08/04/the-idea-maze/)  
 
-*What's MEV?*
-> Miner extractable value (MEV) is a measure of the profit a miner can make through their ability to arbitrarily include, exclude, or re-order transactions within the blocks they produce. 
->
-> --- [CoinMarketCap](https://coinmarketcap.com/alexandria/glossary/miner-extractable-value-mev)
+**TLDR**:
 
-### Idea Mazes
+* Most ideas have been tried in the past.
+* Spend some time learning from the past to save you time focusing on 'provably' wrong priorities/making similar mistakes.
 
-https://cdixon.org/2013/08/04/the-idea-maze/ 
+1. Learn from history (especially for failures)
+2. Build by analogy (to similar businesses)
+3. Consider startup theories (for best practices)
+4. Learn from direct experience (put yourself into interesting idea mazes and give yourself time to figure it out)
 
-### Metrics = Proxies
-
-{{< tweet 1412964538996051972>}}
-
-### Optimise high leverage problems
+## The Two Games You Can Play at a Startup
 
 {{< tweet 1424075612113620996>}}
 
-[The Community Garden: The Case for Leaving FAANG Companies for Crypto](https://www.paradigm.xyz/2021/09/the-community-garden-the-case-for-leaving-faang-companies-for-crypto/)
+👇 Thread in plain text:
 
-### Formulating Problem Statements 
+Short thread on something I wish I had understood much better 10 years ago:
 
-*What's a HiPPo?*
-> 
+If you are ambitious, there are basically two games you can play at a startup. Many people early in their careers (especially those from big tech, consulting, finance) play the wrong game, and lose both.
 
+* Game 1: Optimize for company outcome. Spend all of your time finding and fixing the highest leverage problems you can
 
-### Good and Bad PM
+* Game 2: Optimize for career outcome. Seek external signals like title, scope, and team size. Make sure you're "learning the right things"
 
-[Good Product Manager/Bad Product Manager](https://a16z.com/2012/06/15/good-product-managerbad-product-manager/)
+The more your personal outcome and the company outcome are synonymous, the more obvious it is that Game 1 is the right choice. Founders and people at startups with <10 people almost always play Game 1. At the largest companies, it's more natural (and probably actually in your best interest) to play Game 2. This is close to the definition of why it is so awful to work at very large companies. 
 
-### PURSUIT: Framework for your next great product idea.
+But at most startups, even those with hundreds or thousands of people, it's almost always the right choice to play Game 1. Doing so will result in a better outcome for the company, but also a better outcome your career, for two reasons:
 
-[PURSUIT: Framework for your next great product idea](
-https://uxdesign.cc/pursuit-a-product-framework-for-product-y-folks-9575244fe9d2)
-### Visualising maths 
+1. Startups are an iterated game. Earning a reputation for playing Game 1 **opens doors**
 
-http://worrydream.com/KillMath/  
+2. It's actually very hard to know what is good for your career. Being pulled by the intersection of what the company needs and what you're good at works **better than any "20 year career plan"**
 
-### Uniswap v3 in a nutshell
+As a result, the right move is to focus on putting yourself in the **best companies** with the **best teams** you can, and then playing **Game 1**.
 
-https://www.desmos.com/calculator/qknhcrktmz
+{{< tweet 1424086686644903940>}}
 
-{{< tweet 1431048039230234627 >}}
-### Career Advice Threads
+## Great Interview with @mevintern
 
-{{< tweet 1406269387602944004 >}}
+From [#29: Interview with a Searcher – with MEV Senpai and Hasu + transcript](https://uncommoncore.co/29-interview-with-a-searcher-with-mev-senpai-and-hasu/)
 
-So this will a thread on career advice, mostly because I get enraged seeing absolute nonsense like https://twitter.com/sweatystartup/status/1405205780329078793. To start off, I ain't anyone. I'm well off for my age group, and no I'm not trying to sell you anything. I've done a few things quite well, and a few things pretty piss poorly. I've also now operated in three separate fields (or at least ideas of fields) - software engineering, finance, and bioinformatics. The beauty of this thread is it really isn't some vague bullshit where I tell you you're not working hard enough.
+> I sat down with MEV Senpai, one of the top searchers in Ethereum. He gave us the unique inside perspective of someone who finds and captures MEV himself. The result was a long & intense convo, one of the best I’ve had in a while.
 
-In general, the dirty secret to wealth is most paths are fairly unglamorous, and the magic of compound interest and investments gets us usually to a comfortable retirement based on normal investing rules. That said, there's some fairly universal truths in the current world.
+Here's a list of topics covered:
 
-1) Quantitative skills pay - If you're going into finance, tech, even writing -- you *will* get more understanding:
-- Computer science
-- Statistics and higher maths
-Than someone who doesn't. It's true in literally every single white collar job I've seen. The world runs on code.
+* The **structure** and **actors** of the MEV game
+* What is searching, how can you learn it, what **edges** exist
+* Intro to **private relays** and **transaction bundles**
+* The role of **Flashbots** in DEX trading
+* short-term **reorgs** in Ethereum
 
-You are at a legitimate severe disadvantage not learning how to code, and you're seeing the demands of coding seep into traditionally more artistic fields like design as well (everyone wants a unicorn). There is nothing you can do at 20 skills-wise more valuable than learning how to code, and having at least up to calculus level understanding of math. You don't need to be an expert by any means, but you will look like a god damn savior if you can automate even extremely basic tasks at work, or actually know how to write stuff in Excel. I've heard people belly ache about coding or say it's not for them -- unfortunately literally all the high paying careers now kind of require it, so unless you plan on being a TikTok star or being born rich, it's probably your best path here.
+*What's MEV?*
+> Miner extractable value (MEV) is a measure of the profit a miner can make through their ability to arbitrarily include, exclude, or re-order transactions within the blocks they produce. --- [CoinMarketCap](https://coinmarketcap.com/alexandria/glossary/miner-extractable-value-mev)
 
-2) Entrepreneurship, net, sucks - it's glamorous, but especially out of school, the amount of home runs hit << amount of failed companies. You learn a lot though, and I do recommend everyone try to start a company at least once, especially young when your risk is low. You learn a lot more, and you learn a lot more multidisciplinary skills by doing so. You will probably fail. I failed multiple times. You fight with your cofounders. You network. Please don't do the faux pas of introducing yourself to others as CEO of nothing, and also don't try to pitch to tech students "I'll do the business side of things". Fact of the world is unless you are God's gift to negotiation and marketing, the #1 issue for an early stage startup is building, and you want to not be deadweight. Ideas are cheap. Execution is literally all.
+For context, MEV is one of many arbitrage opportunities on blockchains. Here is an example of what might be the biggest on-chain arbitrage of all time.
 
-3) Understanding what people want -- so this is the communication side of things. You're an awesome quant and you mastered Ito calculus or whatever? Ok, you have interviews. Or maybe you want to raise something. Or maybe you have a cool startup idea or new coin. We all operate in a society, and every job you do, whether you work for someone or for yourself, is selling yourself to others as the solution to their problem. You need to craft a narrative to pitch yourself - why are you the best for the job here? Why should they trust you in the first place?
-
-A lot of insanely brilliant people have incredible difficulty synthesizing an explanation for their research and background. Consequently, they get undervalued. At the end of the day the more quantitative and deep you go, the harder it is for a non-quant to understand not only your value (bad), but in some cases understand what you do at all (even worse). It's hard to get a promotion or a job or a new contract if no one understands the point of your role in the first place!
-Practice writing every day. For me, I write technical threads and blog posts not just for my own amusement or to teach others, but simply to hone my ability to write and communicate. If you can explain to a normal person the finer points of stochastic calculus in a way they actually understand, even at a basic level, something more than when they started reading, you will eventually be successful. My golden rule is to try to always break down concepts to explain to a 5 year old. Not only does it help me refine my craft, but it helps me understand things at a deep level. And finally, the last thing.
-
-4) There is no free lunch - there is no thread, there is no secret strategy, there is nothing you will do, trading included, which is a get rich quick scheme. Those exist to separate fools from money. There are two elements of success - luck and work. Usually one has to have both to succeed. Usually, but not always, this means if you have work ethic, you will fail multiple times before you succeed. Or grok it out for a while. Sometimes manna shines on you and you hit gold on your first one. It's probably the exception rather than the norm. Don't give up. No one becomes a success overnight, and those who do rarely keep it. You will get there by building your skills, by being curious, and by working hard. That's it, really. And maybe learning how to do some fucking math. Fin.
-
-Oh, also freebie final point - network with smart, mostly humble, and actual successful people. I'm not going to namedrop them here since personal privacy, but I've learned a ridiculous amount from talking to others who freely give advice and time. Try to build a charlatan filter
+{{< tweet 1442599763484950528>}}
