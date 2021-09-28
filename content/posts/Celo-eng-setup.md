@@ -1,5 +1,5 @@
 ---
-title: "Celo Engineering Setup"
+title: "👨‍💻 Celo Engineering Setup"
 date: 2021-09-06T14:49:02+01:00
 draft: true
 ---
