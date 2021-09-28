@@ -5,7 +5,7 @@ draft: false
 tags: ["idea mazes", "startup games", "MEV"]
 ---
 
-_Also idea mazes, startup games, MEV_
+_Also idea mazes, startup games, and MEV._
 
 ## Chris Dixon's Idea Maze
 
