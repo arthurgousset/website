@@ -4,7 +4,7 @@ date: 2021-09-20T12:00:00+01:00
 draft: false
 ---
 
-_Also leaving FAANG for crypto, quantitative skills, and personal monopolies,._
+_Also leaving FAANG for crypto, quantitative skills, and personal monopolies._
 
 ## FAANG vs Crypto Careers
 
