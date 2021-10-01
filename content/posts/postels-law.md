@@ -2,7 +2,7 @@
 title: "✍️ Postel's Law"
 date: 2021-02-17T12:00:00+01:00
 draft: false
-tags: ["design principle", "slack", "empathy"]
+tags: ["design principles", "slack", "empathy"]
 ---
 
 These are a few notes on what is known as _Postel's Law_ or the _robustness principle_. The law goes as follows:
