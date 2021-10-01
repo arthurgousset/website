@@ -1,21 +1,28 @@
 ---
-title: "Command Line Interface"
-date: 2021-09-05T23:20:52+01:00
+title: "💡 Cheat Sheet: Command Line Interface"
+date: 2021-05-22T12:00:00+01:00
 draft: true
+showtoc: true
+tags: ["cheat sheets", "Terminal", "CLI"]
 ---
 
-Here are a few resources and cheat sheets for the Apple Terminal:
+## About
 
-[0nn0/terminal-mac-cheatsheet/README.markdown](https://github.com/0nn0/terminal-mac-cheatsheet)
+There are a few commands I end up googling over and over again. Instead of looking up the same stackoverflow question, I decided to keep a record of commands I find helfpul.
 
-Create directory: `mkdir`
+## Cheat Sheet
+
+I borrowed a few commands from [0nn0/terminal-mac-cheatsheet/README.markdown](https://github.com/0nn0/terminal-mac-cheatsheet)
+
+
+### Create directory: `mkdir`
 
 ```bash
 # Example:
 mkdir a_test_folder
 ```
 
-Navigate to directory: `cd`
+### Navigate to directory: `cd`
 
 ```bash
 # Example anywhere:
@@ -24,89 +31,84 @@ cd /Users/USERNAME/FOLDER/FOLDER/
 cd [folder]
 ```
 
-Full path to working directory: `pwd`
+### Full path to working directory: `pwd`
 
 ```bash
 # Example:
 pwd .
 ```
 
-Short listing: `ls`
+### Short listing: `ls`
 
 ```bash
 # Example:
 ls .
 ```
 
-Home directory: `~`
+### Home directory: `~`
 
 ```bash
 # Example:
 cd ~
 ```
 
-Previous directory: `-`
+### Previous directory: `-`
 
 ```bash
 # Example:
 cd -
 ```
 
-Current folder: `.`
+### Current folder: `.`
 
 ```bash
 # Example:
 ls .
 ```
 
-Parent/enclosing directory: `..` 
+### Parent directory: `..`
 
 ```bash
 # Example:
 ls ..
 ```
 
-Move up 2 levels:
+### Move up 2 levels
 
 ```bash
 cd ../../
 ```
 
-Create new file: `touch`
+### Create new file: `touch`
 
 ```bash
 # Example:
 touch an_algorithm.py
 ```
 
-Remove file: `rm`
+### Remove file: `rm`
 
 ```bash
 rm an_algorithm.py
 ```
 
-Rename folder: `mv`
-
-> Condition: If [newname] is not a folder or it's empty
+### Rename folder: `mv`
 
 ```bash
-mv [oldname] [newname]
+mv old_name new_name
 ```
 
+Only if `new_name` **is not** already a folder.
 
-Move folder: mv [oldname] [newname]
+### Move folder: `mv`
 
-this will rename [oldname] to [newname], if [newname] doesn't exist
-this will move [oldname] into [newname], if [newname] exists (/home/user/newname/oldname)
+```bash
+mv old_location new_location
+# mv home/user/desktop/folderA home/user/documents/github/folderX
+```
 
-Remove a directory and contents: rm -r [dir]
+Only if `new_location` **is** already a folder.
 
-Clear terminal window (move up): clear (moves the content one page up but still same terminal instance)
+### Delete a directory and its contents: `rm -r [dir]`
 
-Clear terminal window (empty): reset
-
-In contrast to clear, or Ctrl+L, reset will actually completely re-initialise the terminal, instead of just clearing the screen. However, it won't re-instantiate the shell (bash). That means that bash's state is the same as before, just as if you were merely clearing the screen.
-
-Source: StackExchange
-
-Show head of file: head [file].[extension]
+### Show head of a file: `head [file].[extension]`
