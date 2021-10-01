@@ -1,5 +1,5 @@
 ---
-title: "✍️ A Michael Burry Career Speech"
+title: "✍️ Michael Burry's Career Speech"
 date: 2021-09-05T22:53:02+01:00
 draft: false
 ---
