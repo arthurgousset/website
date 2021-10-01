@@ -1,32 +1,35 @@
 ---
-title: "Michael Burry's UCLA Speech"
+title: "✍️ A Michael Burry Career Speech"
 date: 2021-09-05T22:53:02+01:00
-draft: true
+draft: false
 ---
 
-### About
+## About
 
 This is a speech I found really interesting by [Michael Burry](https://en.wikipedia.org/wiki/Michael_Burry) so I decided to take a few notes below. I also generated a transcript of the commencement speech using [otter.ai](https://otter.ai/) (you can find the transcript below).
 
 {{<youtube 1CLhqjOzoyE>}}
 
-### Summary
+## Summary
 
-When Michael studied, he would be starved for information (taking near-daily trips to Westwood to pick up the WSJ for yesterday’s stock quotes). Today, information swarms us, comforts us, disrupts us. It’s an age of infinite distractions for those so willing.
+When Michael studied, he would be starved for information (taking near-daily trips to Westwood to pick up the WSJ for the previous day's stock quotes). Today, information swarms us, comforts us, disrupts us. It’s an age of infinite distractions for those so willing.
 
-Michael discovered that life for all its amazing possibilities very often does not make sense and at least as often is not fair. One can drop out, run away, get angry and fight. One can also accept the world for what it is, work hard to exploit the opportunities it presents and try to do so in as just a manner as possible.
+Michael discovered that life for all its amazing possibilities very often does not make sense and at least as often is not fair.
+> One can drop out, run away, get angry and fight. One can also accept the world for what it is, work hard to exploit the opportunities it presents and try to do so in as just a manner as possible.
 
 One can work smart or one can work dumb. Hard work for hard work sake alone would not do. Michael began to doubt traditional education and committed himself to educate himself as opportunities arose.
 
-Graduating in economics is a path fairly well worn, but it is a path that in and of itself defines little about our future. Whatever you see as the next obvious step, consider whether you’re being true to yourself, your strengths, your weaknesses, your needs. The decade before you have kids and get married is the most flexible and most genius decade of your life. You ought to consider stepping outside your paradigm for a fresh look now and again.
+Graduating in economics is a path fairly well worn, but it is a path that in and of itself defines little about our future. 
+> Whatever you see as the next obvious step, consider whether you’re being true to yourself, your strengths, your weaknesses, your needs. The decade before you have kids and get married is the most flexible and most genius decade of your life. You ought to consider stepping outside your paradigm for a fresh look now and again.
 
-If you end up working in finance, consider the motto “first, do no harm” (primum non nocere).
+If you end up working in finance, consider the motto “_first, do no harm_” (_primum non nocere_ in latin).
 
 The decision to start an investment firm came very easily. Michael simply weighed the paths before him, without considering the path on which he had been. He figured, as long as he kept asking questions, working hard to answer questions, he would eventually find his way.
 
-Each of our lives “is an epic chance”. You can choose to never stop learning and never stop asking questions but it will not be without staggering difficulties. Faced with a setback, you will be most creative under stress, you will think better and act stronger. So much so, that looking back, it will seem as though it was all meant to be.
+Each of our lives is an epic _chance_:
+> You can choose to never stop learning and never stop asking questions but it will not be without staggering difficulties. Faced with a setback, you will be most creative under stress, you will think better and act stronger. So much so, that looking back, it will seem as though it was all meant to be.
 
-### Transcript
+## Transcript
 
 00:04
 > Now it is with great honor that I introduce today's keynote speaker, Dr. Michael Berry. Michael is one of our own, and economics graduate at the class of 1993. And we are thrilled that he has come back to campus to speak today. He is joined by his wife on T and his sons Michael and Nicholas, his brother in law john and sister in law on men. Michael was an exceptional undergraduate here at UCLA. As a full course load as an econ major wasn't enough. He also managed to fulfill rigorous pre med requirements. After leaving UCLA, he proceeded to earn his medical degree at Vanderbilt. But the drawer of the investment world soon overcame his desire to practice medicine. By the time he founded psi on capital in 2000, Michael had already earned a stellar reputation As an investor with extraordinary vision. Now, about a year and a half after the financial crisis hit in 2008, Queen Elizabeth of England visited the London School of Economics. And she asked the distinguished faculty there. Why nobody had predicted the financial crisis. She should have come to UCLA because Michael did. He used his vision to predict the collapse of America's financial and real estate markets. he foresaw the failure of companies such as AIG, Fannie Mae, Freddie Mac, countrywide, financial and Washington Mutual, you might recognize his story from his profile and Michael lewis's 2010 best selling book, The Big Show, Michael closed sigh on capital in 2008. And these days, he funds startups and invest his own money. Michael will no doubt have some predictions for all of us in the audience today, and certainly some prescient words of advice for the class of 2012 I know we will all be inspired by his story and his vision. And now it gives me great pleasure to welcome the UCLA economics commencement speaker for the class of 2012. Dr. Michael Berry.
