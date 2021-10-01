@@ -1,8 +1,17 @@
 ---
-title: "👨‍💻 Celo Engineering Setup"
-date: 2021-09-06T14:49:02+01:00
-draft: true
+title: "⚙️ Celo Dev Setup"
+date: 2021-08-14T12:00:00+01:00
+draft: false
+tags: ["Celo", "setup"]
 ---
+
+## About
+
+I returned to the [Celo dev setup](https://github.com/celo-org/celo-monorepo/blob/master/SETUP.md) a few times so I decided to copy the instructions for future reference.
+
+The instructions below are mostly exact copies of [celo-org/celo-monorepo/SETUP.md](https://github.com/celo-org/celo-monorepo/blob/master/SETUP.md):
+
+## Instructions
 
 Follow these steps to get everything that you need installed to build the celo-monorepo codebase on your computer.
 
