@@ -1,5 +1,5 @@
 ---
-title: "👀 If You're Interested (3rd week of Sep, 2021)"
+title: "👀 If You're Interested #2"
 date: 2021-09-13T12:33:34+01:00
 draft: false
 tags: ["idea mazes", "startup games", "MEV"]

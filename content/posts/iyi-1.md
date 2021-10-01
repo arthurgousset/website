@@ -1,5 +1,5 @@
 ---
-title: "👀 If You're Interested (2nd week of Sep, 2021)"
+title: "👀 If You're Interested #1"
 date: 2021-09-06T23:33:34+01:00
 draft: false
 tags: ["pm", "HiPPos", "problem statements", "crypto analytics"]
