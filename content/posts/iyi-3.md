@@ -2,6 +2,7 @@
 title: "👀 If You're Interested #3"
 date: 2021-09-20T12:00:00+01:00
 draft: false
+tags: ["FAANG", "career advice", "quantitative skills", "communication skills"]
 ---
 
 _Also leaving FAANG for crypto, quantitative skills, and personal monopolies._
