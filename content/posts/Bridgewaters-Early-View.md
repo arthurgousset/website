@@ -1,18 +1,21 @@
 ---
-title: "Bridgewater's Early View on Covid-19"
-date: 2021-09-05T22:35:08+01:00
-draft: true
+title: "✍️ Bridgewater's Early View on Covid-19"
+date: 2021-02-02T12:00:00+01:00
+draft: false
+tags: ["Bridgewater Associates", "covid-19", "infectious disease"]
 ---
 
-This is a short piece I wrote to myself in March 2020 on the high-level framework Bridgewater used to think about covid-19 at the beginning of the pandemic (link to their [article](https://www.bridgewater.com/research-and-insights/how-we-are-thinking-about-the-coronavirus-and-its-impact-on-markets_)). Here is a link to the [original file](https://drive.google.com/file/d/10o0WURjJwv3IsjisyfXJERstAR77ciWp/preview).
+## About
 
-### Framework for thinking about infectious disease
+These are short notes I wrote to myself in March 2020 on the high-level framework [Bridgewater Associates](https://www.bridgewater.com/) used to think about covid-19 at the beginning of the pandemic (link to their [article](https://www.bridgewater.com/research-and-insights/how-we-are-thinking-about-the-coronavirus-and-its-impact-on-markets_)). Here is a link to my [original notes](https://drive.google.com/file/d/10o0WURjJwv3IsjisyfXJERstAR77ciWp/preview).
+
+## Notes
 
 When you face the outbreak of a new infectious disease, you can look at the situation on 3 levels:
 
-1. Medical
-2. Psychological
-3. Infrastructural.
+1. **Medical**
+2. **Psychological**
+3. **Infrastructural**
 
 ### The Medical perspective
 
@@ -24,6 +27,7 @@ From a medical perspective, the critical parameters are:
 * Reproductive number of the virus (R0)
 
 ### Psychological perspective
+
 From a psychological perspective:
 
 > We know that human estimation of extremely low probability events is bad: people tend to rely on heuristics like availability or vividness as proxies for probability. As a result, events like are 2019-nCoV are much scarier than they objectively need to be. But this does not render the problem imaginary. In fact, quite the opposite. Thousands or millions of people imagining the same thing can become self-reinforcing, amplifying the currents of fear running though society with each snippet of information or new anecdote.
