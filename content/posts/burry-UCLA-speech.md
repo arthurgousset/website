@@ -1,6 +1,6 @@
 ---
 title: "✍️ Michael Burry's Career Speech"
-date: 2021-09-05T22:53:02+01:00
+date: 2021-05-30T12:00:02+01:00
 draft: false
 ---
 
