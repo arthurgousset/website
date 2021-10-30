@@ -17,7 +17,7 @@ According to [80,000 Hours](https://80000hours.org/make-a-difference-with-your-c
 
 ### Currently
 
-I'm a crypto product manager at [cLabs](https://clabs.co/) (🧑‍🚀) working on [identity](https://docs.celo.org/celo-codebase/protocol/identity) for the [Celo](https://celo.org/) blockchain 🌌
+I'm a product manager at [cLabs](https://clabs.co/) (🧑‍🚀) working on [identity](https://docs.celo.org/celo-codebase/protocol/identity) for the [Celo](https://celo.org/) blockchain 🌌
 
 I'm also a board member on the advisor board of [Kontrol](https://www.kontrol.tech/), a software start-up that works on [formal verification](https://en.wikipedia.org/wiki/Formal_verification) of autonomous systems (💭) in drones and cars.
 
