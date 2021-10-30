@@ -9,7 +9,7 @@ tags: ["crypto analytics"]
 
 _What's [Flipside Crypto](https://www.flipsidecrypto.com/)?_
 
-Flipside crypto is a website that 
+Flipside crypto is a website that
 
 > puts pre-modeled and labeled blockchain data in the hands of communities. Through dashboard and visualization tools, as well as auto-generated API endpoints, data analysts can easily create queries that answer any question.
 
