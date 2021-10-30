@@ -1,7 +1,7 @@
 baseURL: 'http://0xarthur.xyz/'
 languageCode: en-us
 title: Home
-paginate: 5
+paginate: 10
 theme: PaperMod
 
 ignoreErrors: ["error-remote-getjson"]
