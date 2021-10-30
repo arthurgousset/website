@@ -1,6 +1,6 @@
 ---
 title: "MEV Senpai with Hasu"
-date: 2021-10-30T12:33:34+01:00
+date: 2021-10-01T12:33:34+01:00
 draft: false
 tags: ["MEV", "crypto"]
 ---
