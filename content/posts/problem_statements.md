@@ -1,5 +1,5 @@
 ---
-title: "Problem Statements and HiPPos (with ASOS PM)"
+title: "Problem Statements and HiPPos with an ASOS PM"
 date: 2021-09-06T23:33:34+01:00
 draft: false
 tags: ["problem statements", "HiPPos"]
@@ -23,5 +23,4 @@ _Richard, who loves to eat biscuits wants to find a way to eat at 5 biscuits a d
 
 _What's a HiPPo?_
 > HiPPo stands for the “highest paid person’s opinion”, who based on their experience or status knows exactly what needs to happen and why. --- [MAA1](https://maa1.medium.com/my-product-management-toolkit-4-problem-statements-27e7ebe8804d)
-
 > Before you start thinking about solutions, please spend a good amount of time understanding the problem that you’re looking to solve. Please, please don’t be intimidated by ‘HiPPo stakeholders’ who already know the solution and tell you to ‘just to make things happen.’ --- [MAA1](https://maa1.medium.com/my-product-management-toolkit-4-problem-statements-27e7ebe8804d)
