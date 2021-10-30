@@ -5,15 +5,15 @@ draft: false
 tags: ["a16z", "reputation"]
 ---
 
-Source: https://future.a16z.com/reputation-based-systems/
+Source: [A Novel Framework for Reputation-Based Systems](https://future.a16z.com/reputation-based-systems/)
 
 TL;DR:
 
 - paradox: easily transferable reputation (liquidity) = less meaningful reputation (signal)
 - solution: "reputation points" (cannot be traded) + "liquidity coins" (can be traded)
 - users receive non-tradable “reputation points” (= for signalling) that pay "dividends" in a tradable “liquidity coin”. Demand for liquidity coins makes having many reputation points desirable.
-- 3 parameters for “dividend” design: 
-    1. the “size” of overall dividends (how many coins are issued across all users?) [n.b: doesn’t have to be asymptotically bound], 
+- 3 parameters for “dividend” design:
+    1. the “size” of overall dividends (how many coins are issued across all users?) [n.b: doesn’t have to be asymptotically bound],
     2. the “supply” of dividends (how regularly are coins issued?) [n.b: preferably regularly],
     3. the “distribution” of dividends across users (how does coin receipt relate to point ownerships?) [n.b: linearly = 1:1, convex = favours the rich, concave = favours the poor]
 - (ideally) dividend design satisfies: "marginal value (to platform)" = "marginal value (to user)" [n.b: this favours early contributors, but early contributors != most valuable to the platform]

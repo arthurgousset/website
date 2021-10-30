@@ -19,7 +19,7 @@ If you are ambitious, there are basically two games you can play at a startup. M
 
 * Game 2: Optimize for career outcome. Seek external signals like title, scope, and team size. Make sure you're "learning the right things"
 
-The more your personal outcome and the company outcome are synonymous, the more obvious it is that Game 1 is the right choice. Founders and people at startups with <10 people almost always play Game 1. At the largest companies, it's more natural (and probably actually in your best interest) to play Game 2. This is close to the definition of why it is so awful to work at very large companies. 
+The more your personal outcome and the company outcome are synonymous, the more obvious it is that Game 1 is the right choice. Founders and people at startups with <10 people almost always play Game 1. At the largest companies, it's more natural (and probably actually in your best interest) to play Game 2. This is close to the definition of why it is so awful to work at very large companies.
 
 But at most startups, even those with hundreds or thousands of people, it's almost always the right choice to play Game 1. Doing so will result in a better outcome for the company, but also a better outcome your career, for two reasons:
 

@@ -9,7 +9,7 @@ tags: ["Michael Burry", "investing", "career advice", "risk", "ethics"]
 
 This is a speech I found really interesting by [Michael Burry](https://en.wikipedia.org/wiki/Michael_Burry) so I decided to take a few notes below. I also generated a transcript of the commencement speech using [otter.ai](https://otter.ai/) (you can find the transcript below).
 
-{{<youtube 1CLhqjOzoyE>}}
+{{ < youtube 1CLhqjOzoyE > }}
 
 ## Summary
 
@@ -20,7 +20,7 @@ Michael discovered that life for all its amazing possibilities very often does n
 
 One can work smart or one can work dumb. Hard work for hard work sake alone would not do. Michael began to doubt traditional education and committed himself to educate himself as opportunities arose.
 
-Graduating in economics is a path fairly well worn, but it is a path that in and of itself defines little about our future. 
+Graduating in economics is a path fairly well worn, but it is a path that in and of itself defines little about our future.
 > Whatever you see as the next obvious step, consider whether you’re being true to yourself, your strengths, your weaknesses, your needs. The decade before you have kids and get married is the most flexible and most genius decade of your life. You ought to consider stepping outside your paradigm for a fresh look now and again.
 
 If you end up working in finance, consider the motto “_first, do no harm_” (_primum non nocere_ in latin).
