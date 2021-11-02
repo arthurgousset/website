@@ -5,9 +5,11 @@ draft: false
 tags: ["a16z", "reputation"]
 ---
 
-Source: [A Novel Framework for Reputation-Based Systems](https://future.a16z.com/reputation-based-systems/)
+## Reference
 
-TL;DR:
+[A Novel Framework for Reputation-Based Systems](https://future.a16z.com/reputation-based-systems/)
+
+## TL;DR:
 
 - **Paradox**: easily transferable reputation (liquidity) = less meaningful reputation (signal)
 - **Solution**: `reputation points` (cannot be traded) + `liquidity coins` (can be traded)
