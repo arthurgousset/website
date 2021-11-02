@@ -20,5 +20,5 @@ TL;DR:
 - Two improvements Down pointing backhand index
 - Two improvement Electric light bulb:
     1. **depreciating** points over time can help, or
-    2. points can be **zero-sum**, i.e. users maintain/lose points as a function of their engagement relative to others]
+    2. points can be **zero-sum**, i.e. users maintain/lose points as a function of their engagement relative to others
 - but (!) don‘t overfinancialise it: (after all) it "should" be product-market fit that motivates users to use the platform not profit, i.e. optimise for engagement (=users) not profit generation (= speculators)
