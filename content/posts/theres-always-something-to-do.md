@@ -1,5 +1,5 @@
 ---
-title: "📚 Theres Always Something to Do"
+title: "📚 There's Always Something to Do"
 date: 2021-05-19T12:00:00+01:00
 draft: false
 showtoc: true
