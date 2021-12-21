@@ -1,6 +1,6 @@
 ---
 title: "Python"
-date: 2021-05-19T12:00:00+01:00
+date: 2021-12-21T12:00:00+01:00
 draft: true
 showtoc: true
 tags: ["python"]
