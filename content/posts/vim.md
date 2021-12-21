@@ -6,8 +6,6 @@ tags: ["vim"]
 showtoc: false
 ---
 
-# Vim Cheat Sheet
-
 `Shift - i`: jump to beginning of line and start insert mode
 
 `$`: jump to end of line
