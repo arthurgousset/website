@@ -1,16 +1,14 @@
 ---
 title: "SQL"
 date: 2021-12-20T12:00:00+01:00
-draft: true
-tags: ["sql", "analytics"]
-showtoc: false
+draft: false
+tags: ["sql", "cheat sheet"]
+showtoc: true
 ---
 
-These are some noob notes for writing SQL queries (mostly notes-to-self).
+## Context
 
-I mostly use [SQL Tutorial](https://www.sqltutorial.org/sql-cheat-sheet/) and [W3School](https://www.w3schools.com/sql/) to look up syntax questions and other details.
-
-To practice (at the very beginning), I used "easy" [HackerRank SQL questions](https://www.hackerrank.com/domains/sql).
+These are noob notes for writing SQL queries (mostly notes-to-self). I use [SQL Tutorial](https://www.sqltutorial.org/sql-cheat-sheet/) and [W3School](https://www.w3schools.com/sql/) to look up syntax questions and other details. To practice concepts I use "easy" [HackerRank SQL questions](https://www.hackerrank.com/domains/sql).
 
 ## Querying data from a table
 
