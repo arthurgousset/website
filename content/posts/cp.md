@@ -1,5 +1,5 @@
 ---
-title: "💡 Cheat Sheet: Competitive Programming"
+title: "🤷‍♂️ Competitive Programming (noob notes)"
 date: 2021-06-10T12:00:00+01:00
 draft: false
 tags: ["competitive programming", "algorithms", "leetcode", "codeforces", "hackerrank", "time complexities"]
