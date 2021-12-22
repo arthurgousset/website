@@ -9,7 +9,7 @@ tags: ["Michael Burry", "investing", "career advice", "risk", "ethics", "change"
 
 This is a speech I found really interesting by [Michael Burry](https://en.wikipedia.org/wiki/Michael_Burry) so I decided to take a few notes below. I also generated a transcript of the commencement speech using [otter.ai](https://otter.ai/) (you can find the transcript below).
 
-{{ < youtube 1CLhqjOzoyE > }}
+{{<youtube 1CLhqjOzoyE>}}
 
 ## Summary
 
