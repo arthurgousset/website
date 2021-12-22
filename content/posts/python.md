@@ -1,10 +1,13 @@
 ---
 title: "🤓 Python (noob notes)"
 date: 2021-12-21T12:00:00+01:00
-draft: true
+draft: false
 showtoc: true
 tags: ["python"]
 ---
+
+Context: These are noob notes on Python (mostly notes-to-self). They are incomplete by default.
+
 
 ### Strings
 
@@ -108,7 +111,6 @@ The `raise` statement allows the programmer to force a specified exception to oc
 ```py
 raise NameError('HiThere')
 ```
-
 
 ### pytest (testing)
 
