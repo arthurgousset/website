@@ -1,5 +1,5 @@
 ---
-title: "Idea Mazes with Chris Dixon"
+title: "🧵 Idea Mazes with Chris Dixon"
 date: 2021-10-01T12:33:34+01:00
 draft: false
 tags: ["idea mazes", "startup games", "MEV"]

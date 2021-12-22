@@ -1,5 +1,5 @@
 ---
-title: "Algorithm improvements vs Moore's Law with MIT CSAIL"
+title: "🧵 Algorithm improvements vs Moore's Law with MIT CSAIL"
 date: 2021-11-02T12:33:34+01:00
 draft: false
 tags: ["algorithms", "Moore's Law"]

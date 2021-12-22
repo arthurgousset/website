@@ -1,5 +1,5 @@
 ---
-title: "PM Ratings with Shreyas Doshi"
+title: "🧵 PM Ratings with Shreyas Doshi"
 date: 2021-09-06T23:33:34+01:00
 draft: false
 tags: ["product management"]

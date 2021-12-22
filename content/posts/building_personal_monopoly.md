@@ -1,5 +1,5 @@
 ---
-title: "Competence + Curiosity + Character with VisualiseValue"
+title: "🧵 Competence + Curiosity + Character with VisualiseValue"
 date: 2021-09-20t12:00:00+01:00
 draft: false
 tags: ["faang", "career advice", "quantitative skills", "communication skills"]

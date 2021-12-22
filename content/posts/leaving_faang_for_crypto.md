@@ -1,5 +1,5 @@
 ---
-title: "Leaving FAANG for Crypto with Paradigm Recruiter"
+title: "🧵 Leaving FAANG for Crypto with Paradigm Recruiter"
 date: 2021-09-20T12:00:00+01:00
 draft: false
 tags: ["FAANG"]

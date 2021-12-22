@@ -1,5 +1,5 @@
 ---
-title: "The Case for Quantitative Skills with LilyWrites"
+title: "🧵 The Case for Quantitative Skills with LilyWrites"
 date: 2021-09-20T12:00:00+01:00
 draft: false
 tags: ["career advice", "quantitative skills", "communication skills"]

@@ -1,5 +1,5 @@
 ---
-title: "Problem Statements and HiPPos with an ASOS PM"
+title: "🧵 Problem Statements and HiPPos with an ASOS PM"
 date: 2021-09-06T23:33:34+01:00
 draft: false
 tags: ["problem statements", "HiPPos"]

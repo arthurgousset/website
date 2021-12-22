@@ -1,5 +1,5 @@
 ---
-title: "MEV Senpai with Hasu"
+title: "🎙 MEV with Hasu and mevintern"
 date: 2021-10-01T12:33:34+01:00
 draft: false
 tags: ["MEV", "crypto"]

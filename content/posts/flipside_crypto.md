@@ -1,5 +1,5 @@
 ---
-title: "Flipside Crypto (Crypto Analytics)"
+title: "🧵 Flipside Crypto (Crypto Analytics)"
 date: 2021-09-06T23:33:34+01:00
 draft: false
 tags: ["crypto analytics"]

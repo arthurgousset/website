@@ -1,5 +1,5 @@
 ---
-title: "✍️ Bridgewater's Early View on Covid-19"
+title: "🧵 Bridgewater's Early View on Covid-19"
 date: 2021-02-02T12:00:00+01:00
 draft: false
 tags: ["Bridgewater Associates", "covid-19", "infectious disease"]

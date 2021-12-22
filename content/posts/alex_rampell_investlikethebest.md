@@ -1,5 +1,5 @@
 ---
-title: "Fintech, Investing, and Operating Systems with Alex Rampell"
+title: "🎙 Fintech, Investing, and Operating Systems with Alex Rampell"
 date: 2021-11-02T12:00:00+01:00
 draft: false
 tags: ["alex rampell", "fintech", "operating systems", "venture capital"]

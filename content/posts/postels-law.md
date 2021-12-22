@@ -1,5 +1,5 @@
 ---
-title: "✍️ Postel's Law"
+title: "🧵 Postel's Law"
 date: 2021-02-17T12:00:00+01:00
 draft: false
 tags: ["design principles", "slack", "empathy"]

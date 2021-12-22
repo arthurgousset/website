@@ -1,5 +1,5 @@
 ---
-title: "📰 Kontrol is Raising a €200k Convertible Loan"
+title: "📣 Kontrol is Raising a €200k Convertible Loan"
 date: 2021-06-10T12:00:00+01:00
 draft: false
 tags: ["Kontrol", "convertible loan", "venture capital"]

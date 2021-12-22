@@ -1,8 +1,8 @@
 ---
-title: "✍️ Michael Burry's Career Speech"
+title: "📽 Michael Burry's Career Speech"
 date: 2021-05-30T12:00:02+01:00
 draft: false
-tags: ["Michael Burry", "investing", "career advice", "risk", "ethics"]
+tags: ["Michael Burry", "investing", "career advice", "risk", "ethics", "change"]
 ---
 
 ## About
