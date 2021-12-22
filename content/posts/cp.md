@@ -2,7 +2,7 @@
 title: "🤷‍♂️ Competitive Programming (noob notes)"
 date: 2021-06-10T12:00:00+01:00
 draft: false
-tags: ["competitive programming", "algorithms", "leetcode", "codeforces", "hackerrank", "time complexities"]
+tags: ["competitive programming", "algorithms", "leetcode", "codeforces", "hackerrank", "time complexities", "noob notes"]
 ---
 
 At university programming questions in algorithms and data structures classes usually give you an upper bound time complexity in Big-O notation to achieve full marks.
