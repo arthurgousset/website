@@ -6,6 +6,12 @@ tags: ["hugo", "noob notes"]
 showtoc: false
 ---
 
+### Create post
+
+```bash
+hugo new posts/<file.md>
+```
+
 ### Clone Hugo website on new device
 
 Install Hugo: `brew install hugo`.
