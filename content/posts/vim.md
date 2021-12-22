@@ -1,7 +1,7 @@
 ---
 title: "🤷‍♂️ Vim (noob notes)"
-date: 2021-12-21T12:00:00+01:00
-draft: true
+date: 2021-11-30T12:00:00+01:00
+draft: false
 tags: ["vim", "noob notes"]
 showtoc: false
 ---
