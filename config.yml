@@ -65,8 +65,11 @@ params:
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
-            - name: Blog
-              url: posts/
+            # - name: TLDRs
+            #   url: posts/
+            # - name: Noob Notes
+            #   url: tags/noob-notes
+              
 
     # Uncomment if you want posts on the homepage instead of profileMode
     # homeInfoParams:
@@ -87,10 +90,10 @@ params:
 
 
     socialIcons: # optional
-        - name: twitter
-          url: "https://twitter.com/Arthur__Gousset"
         - name: github
           url: "https://github.com/arthurgousset"
+        - name: twitter
+          url: "https://twitter.com/0xArthurxyz"
         - name: linkedin
           url: "https://www.linkedin.com/in/arthur-gousset/"
 
