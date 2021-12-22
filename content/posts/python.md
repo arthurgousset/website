@@ -1,9 +1,9 @@
 ---
-title: "🤓 Python (noob notes)"
+title: "🤷‍♂️ Python (noob notes)"
 date: 2021-12-21T12:00:00+01:00
 draft: false
 showtoc: true
-tags: ["python"]
+tags: ["python", "noob notes"]
 ---
 
 Context: These are noob notes on Python (mostly notes-to-self). They are incomplete by default.
