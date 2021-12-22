@@ -1,5 +1,5 @@
 ---
-title: "🤓 SQL (noob notes)"
+title: "🤷‍♂️ SQL (noob notes)"
 date: 2021-12-20T12:00:00+01:00
 draft: false
 tags: ["sql", "noob notes"]
