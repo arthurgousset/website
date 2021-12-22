@@ -1,9 +1,9 @@
 ---
-title: "💡 Cheat Sheet: Command Line Interface"
+title: "🤷‍♂️ CLI (noob notes)"
 date: 2021-05-22T12:00:00+01:00
 draft: true
 showtoc: true
-tags: ["cheat sheets", "Terminal", "CLI"]
+tags: ["noob notes", "Terminal", "CLI"]
 ---
 
 ## About
