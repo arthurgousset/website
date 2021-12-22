@@ -1,5 +1,5 @@
 ---
-title: "⚙️ Celo Dev Setup"
+title: "🧵 Celo Dev Setup"
 date: 2021-08-14T12:00:00+01:00
 draft: false
 tags: ["Celo", "setup"]
