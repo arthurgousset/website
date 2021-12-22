@@ -1,5 +1,5 @@
 ---
-title: "A Framework for Reputation-based Models with a16z"
+title: "🧵 A Framework for Reputation-based Models with a16z"
 date: 2021-10-21T12:00:00+01:00
 draft: false
 tags: ["a16z", "reputation"]
