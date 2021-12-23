@@ -69,6 +69,16 @@ result = some_function_that_takes_arguments(
 
 ### Strings
 
+#### f-strings (formatted string literals)
+
+```py
+>>> import math
+>>> print(f'The value of pi is approximately {math.pi:.3f}.')
+The value of pi is approximately 3.142.
+```
+
+*Source: Python docs [7.1. Fancier Output Formatting](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)*
+
 #### [`ord(c)`](https://docs.python.org/3/library/functions.html#ord) and [`chr(i)`](https://docs.python.org/3/library/functions.html#chr)
 
 ```py
@@ -91,6 +101,71 @@ result = some_function_that_takes_arguments(
 | U+0063 | c | 99  | 0143 | Latin Small Letter C | 0068 |
 | ... | ...| ... | ... | ... | ... |
 | U+007A | z | 122 | 0172 | Latin Small Letter Z | 0091 |
+
+### Lists
+
+#### Checks if element(s) exists in list
+
+Using **`in`** operator:
+
+```python
+if i in lst:
+  print("Found")
+  
+if "a" in "arthur":
+  print("Found")
+```
+
+Using **`list.count()`** function:
+
+```py
+list.count(elem) == 1
+```
+*Source: [thispointer.com](https://thispointer.com/python-how-to-check-if-an-item-exists-in-list-search-by-value-or-condition/)*
+
+
+Using **`all()`** function:
+
+```py
+'''
+    check if list1 contains all elements in list2
+'''
+result =  all(elem in list1  for elem in list2)
+````
+
+*Source: [thispointer.com](https://thispointer.com/python-check-if-a-list-contains-all-the-elements-of-another-list/)*
+
+
+**[`all(iterable)`](https://docs.python.org/3/library/functions.html#all)**: Return `True` if all elements of the *iterable* are true (or if the iterable is empty). Equivalent to:
+
+```py
+def all(iterable):
+    for element in iterable:
+        if not element:
+            return False
+    return True
+```
+
+Using **`any()`** function:
+
+```py
+'''
+    check if list1 contains any elements of list2
+'''
+result =  any(elem in list1  for elem in list2)
+```
+
+*Source: [thispointer.com](https://thispointer.com/python-check-if-a-list-contains-all-the-elements-of-another-list/)*
+
+**[`any(iterable)`](https://docs.python.org/3/library/functions.html#any)**: Return True if any element of the iterable is true. If the iterable is empty, return False. Equivalent to:
+
+```py
+def any(iterable):
+    for element in iterable:
+        if element:
+            return True
+    return False
+```
 
 
 ### Sets
@@ -182,13 +257,34 @@ class CashRegister:
 # call inside main function using registerABC.copy(registerDEF)
 ```
 
+#### Attributes of an object
+
+**[`object.__dict__`](https://docs.python.org/2/library/stdtypes.html#object.dict)**: A dictionary or other mapping object used to store an object’s (writable) attributes. 
+
+Alternatively, **[`vars(an_obj)`](https://docs.python.org/2/library/functions.html#vars)**: return the `__dict__` attribute for a module, class, instance, or any other object with a `__dict__` attribute.
+
+```py
+class Parent:
+  name : str
+  age : int
+  def __init__(self, name : str, age : int):
+    self.name = name
+    self.age = age
+
+p = Parent("John Doe", 40)
+vars(p)
+>>> {'name': 'John Doe', 'age': 40}
+p.__dict__
+>>> {'name': 'John Doe', 'age': 40}
+```
+
 #### Inheritance
 
 - Inheritance syntax
   - Pass `parent class` as **argument** in `child class` definition, e.g. `class Child_class(Parent_class):`
   - Use `super()` to pass arguments into parent class method
  
-```python
+```py
 class Parent:
   name : str
   age : int
@@ -199,13 +295,13 @@ class Parent:
 class Mum(Parent):
   profession : str
   def __init__(self, name : str, age : int, profession : str):
-    super().__init__(name : str, age : int)
+    super().__init__(name, age)
     self.profession = profession
     
 class Dad(Parent):
   hobby : str
   def __init__(self, name : str, age : int, hobby : str):
-    super().__init__(name : str, age : int)
+    super().__init__(name, age)
     self.hobby = hobby
 ```
  
@@ -268,6 +364,61 @@ Inherited attributes (from AcademicEmployee):
   def setCourses(self, crss):
     self._courses = crss
 ```
+
+#### `__repr__` and `__str__`
+
+Almost every object you implement should have a functional `__repr__` that’s usable for understanding the object. Implementing **`str` is optional**: do that if you need a “pretty print” functionality (for example, used by a report generator).
+
+*Source: [Stack Overflow](https://stackoverflow.com/a/2626364)*
+
+Example:
+
+```py
+class Person:
+
+    def __init__(self, person_name, person_age):
+        self.name = person_name
+        self.age = person_age
+
+    def __str__(self):
+        return f'Person name is {self.name} and age is {self.age}'
+
+    def __repr__(self):
+        return f'Person(name={self.name}, age={self.age})'
+
+
+p = Person('Pankaj', 34)
+
+print(p.__str__())
+>>> Person name is Pankaj and age is 34
+print(p.__repr__())
+>>> Person(name=Pankaj, age=34)
+```
+
+*Source: [JournalDev](https://www.journaldev.com/22460/python-str-repr-functions)*
+
+#### Name of a class using `type().__name__`
+
+**[`definition.name`](https://docs.python.org/2/library/stdtypes.html#definition.name)**: The name of the class, type, function, method, descriptor, or generator instance.
+
+```py
+class Parent:
+  name : str
+  age : int
+  def __init__(self, name : str, age : int):
+    self.name = name
+    self.age = age
+
+def __repr__(self) -> str: # visualises Parent object in CLI
+  return f'{type(self).__name__}(name: {self.name}, age: {self.name})'
+  
+
+>>> john = Parent("John Doe", 54)
+>>> print(john)
+Parent(name: John Doe, age: 54)
+```
+
+*Source: [DelftStack](https://www.delftstack.com/howto/python/python-get-class-name/)*
 
 ### Exceptions (errors)
 
