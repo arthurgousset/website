@@ -93,8 +93,6 @@ result = some_function_that_takes_arguments(
 | U+007A | z | 122 | 0172 | Latin Small Letter Z | 0091 |
 
 
-
-
 ### Sets
 
 The `difference_update()` method removes the items that exist in both sets.
@@ -128,6 +126,148 @@ Source: [W3School](https://www.w3schools.com/python/ref_set_update.asp)
 `d.items()` and `ErrorValue: too many values to unpack (expected 2)`
 
 Source: [Career Karma](https://careerkarma.com/blog/python-valueerror-too-many-values-to-unpack-expected-2/)
+
+### Objects
+
+#### Constructor (`__init__`)
+
+`Constructors` **initialise** variables when an object is created. Constructors have a **reserved** name `__init__`, e.g.:
+We never really call the `__init__` method itself e.g. `CashRegister.__init__`. It's only really used to initialise variables when an object is instantiated.
+
+```py
+class CashRegister:
+  def __init__(self):
+    self._itemCount = 0
+    self._totalPrice = 0.0
+# instantiate using registerABC = CashRegister()
+
+# or with argument
+class CashRegister:
+  def __init__(self, initial_balance):
+    self._itemCount = 0
+    self._totalPrice = initial_balance
+# instantiate using registerABC = CashRegister(50)
+```
+
+#### `self`
+
+By default, we always pass `self` as an argument when **defining** a `method`, e.g.:
+
+```py
+def methodName(self, argument_1, argument_1, ...)
+```
+
+But we don't pass `self` when **calling** the method, e.g.:
+
+```py
+object.methodName(argument_1, argument_1, ...)
+```
+
+You can also use `self` inside methods of a class to refer to the state of the object, e.g.:
+
+```py
+class CashRegister: 
+  def clear(self):
+    self._itemCount = 0
+```
+
+Similarly you can reference other objects to access their state inside methods, e.g.:
+
+```py
+class CashRegister: 
+  def copy(self, other):
+    self._itemCount = other._itemCount
+    self._totalPrice = other._totalPrice
+
+# call inside main function using registerABC.copy(registerDEF)
+```
+
+#### Inheritance
+
+- Inheritance syntax
+  - Pass `parent class` as **argument** in `child class` definition, e.g. `class Child_class(Parent_class):`
+  - Use `super()` to pass arguments into parent class method
+ 
+```python
+class Parent:
+  name : str
+  age : int
+  def __init__(self, name : str, age : int):
+    self.name = name
+    self.age = age
+ 
+class Mum(Parent):
+  profession : str
+  def __init__(self, name : str, age : int, profession : str):
+    super().__init__(name : str, age : int)
+    self.profession = profession
+    
+class Dad(Parent):
+  hobby : str
+  def __init__(self, name : str, age : int, hobby : str):
+    super().__init__(name : str, age : int)
+    self.hobby = hobby
+```
+ 
+
+
+#### Example:
+
+```py
+class Employee:
+'''
+Attributes: 
+- name
+- payroll number
+- salary
+'''
+  def __init__(self, nm, prnum):
+    self._name = nm
+    self._payrollNum = prnum
+    self._salary = 0
+
+  def setSalary(self, sal):
+    self._salary = sal
+
+  def statusReport(self):
+    s = "%s:%s,%s." % (self._name, self._payrollNum, self._salary)
+    return s
+
+class AcademicEmployee(Employee):
+'''
+New attribute(s):
+- department
+
+Inherited attributes (from Employee): 
+- name
+- payroll number
+- salary
+'''
+  def __init__(self, nm, prnum):
+    super().__init__(nm, prnum)
+    self._department = "N/A"
+  
+  def setDepartment(self, dept):
+    self._department = dept
+
+class TeachingEmployee(AcademicEmployee):
+'''
+New attribute(s):
+- courses
+
+Inherited attributes (from AcademicEmployee): 
+- name
+- payroll number
+- salary
+- department
+'''
+  def __init__(self, nm, prnum):
+    super().__init__(nm, prnum)
+    self._courses = "N/A"
+  
+  def setCourses(self, crss):
+    self._courses = crss
+```
 
 ### Exceptions (errors)
 
