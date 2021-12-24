@@ -10,35 +10,6 @@ Context: These are noob notes on Python (mostly notes-to-self). They are incompl
 
 ### Formatting and style
 
-
-#### Indentation
-
-Closing brace/bracket/parenthesis on multiline constructs:
-
-```py
-# correct
-my_list = [
-    1, 2, 3,
-    4, 5, 6,
-    ]
-result = some_function_that_takes_arguments(
-    'a', 'b', 'c',
-    'd', 'e', 'f',
-    )
-
-# also correct
-my_list = [
-    1, 2, 3,
-    4, 5, 6,
-]
-result = some_function_that_takes_arguments(
-    'a', 'b', 'c',
-    'd', 'e', 'f',
-)
-```
-
-*Source: [PEP 8: Indentation](https://www.python.org/dev/peps/pep-0008/#indentation)*
-
 #### Indentation
 
 Closing brace/bracket/parenthesis on multiline constructs:
