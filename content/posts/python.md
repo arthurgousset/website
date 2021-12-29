@@ -178,6 +178,24 @@ Source: [W3School](https://www.w3schools.com/python/ref_set_update.asp)
 
 Source: [Career Karma](https://careerkarma.com/blog/python-valueerror-too-many-values-to-unpack-expected-2/)
 
+### [`copy.deepcopy()`](https://docs.python.org/3/library/copy.html)
+
+```py
+import copy
+
+copy.copy(x) # Return a shallow copy of x.
+copy.deepcopy(x) # Return a deep copy of x.
+```
+
+> copy() is a shallow copy function. If the given argument is a compound data structure, for instance a list, then Python will create another object of the same type (in this case, a new list) but for everything inside the old list, only their reference is copied. Think of it like:
+
+```py
+newList = [elem for elem in oldlist]
+```
+
+*Source: [Stack Overflow](https://stackoverflow.com/a/32791606)*
+
+
 ### Objects
 
 #### Constructor (`__init__`)
@@ -232,6 +250,10 @@ class CashRegister:
 
 # call inside main function using registerABC.copy(registerDEF)
 ```
+
+#### `is` operator
+
+`is` and `is not` are the identity operators. They are used to check if two values (or variables) are located on the same part of the **memory**.
 
 #### Attributes of an object
 
