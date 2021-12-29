@@ -195,7 +195,6 @@ newList = [elem for elem in oldlist]
 
 *Source: [Stack Overflow](https://stackoverflow.com/a/32791606)*
 
-
 ### Objects
 
 #### Constructor (`__init__`)
@@ -275,6 +274,60 @@ vars(p)
 p.__dict__
 >>> {'name': 'John Doe', 'age': 40}
 ```
+
+#### Rare use of `global`
+
+We can only **access** global variables in local scopes but cannot **modify** them from local scopes.
+
+The solution is to use the `global` keyword.
+
+The basic rules for `global` keyword in Python are:
+
+* When we create a variable inside a function, it is *local* by default.
+* When we define a variable outside of a function, it is *global* by default. You don't have to use `global` keyword.
+* We use `global` keyword to read and write a *global* variable inside a function.
+* Use of `global` keyword outside a function has no effect.
+
+```py
+# Example 1: **Accessing** global Variable From Inside a Function
+c = 1 # global variable
+
+def add():
+    print(c)
+
+add()
+>>> 1
+```
+
+```py
+# Example 2: **Modifying** Global Variable From Inside the Function
+c = 1 # global variable
+    
+def add():
+    c = c + 2 # increment c by 2
+    print(c)
+
+add()
+>>> UnboundLocalError: local variable 'c' referenced before assignment
+```
+
+```py
+# Example 3: Changing Global Variable From Inside a Function using global
+c = 0 # global variable
+
+def add():
+    global c
+    c = c + 2 # increment by 2
+    print("Inside add():", c)
+
+add()
+print("In main:", c)
+>>> Inside add(): 2
+>>> In main: 2
+```
+
+*Source: [Programmiz](https://www.programiz.com/python-programming/global-keyword)*
+
 
 #### Inheritance
 
