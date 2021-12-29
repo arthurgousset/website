@@ -138,6 +138,11 @@ def any(iterable):
     return False
 ```
 
+#### [`list.index(x)`](https://docs.python.org/3/tutorial/datastructures.html)
+
+Return zero-based index in the list of the first item whose value is equal to x. Raises a `ValueError` if there is no such item.
+
+`list.index(x[, start[, end]])`: The optional arguments *start* and *end* are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list. The returned index is computed relative to the beginning of the full sequence rather than the *start* argument.
 
 ### Sets
 
@@ -390,6 +395,36 @@ Parent(name: John Doe, age: 54)
 ```
 
 *Source: [DelftStack](https://www.delftstack.com/howto/python/python-get-class-name/)*
+
+### Type hinting
+
+#### [`typing.Callable`](https://docs.python.org/3/library/typing.html#typing.Callable)
+
+Requires import:
+```py
+from typing import Callable
+
+# code
+```
+
+- Syntax: `Callable[[Arg1Type, Arg2Type], ReturnType]` 
+- Requires exactly two values (e.g. `Callable[[int], str]`): 
+1. **argument list**: must be a list of types or an ellipsis (e.g. `[int]`)
+2. **return type**: must be a single type (e.g. `str`)
+
+There is no syntax to indicate optional or keyword arguments
+
+
+```py
+# Example
+from typing import Callable
+
+foo : Callable[[int], str] # function of (int) -> str.
+
+def foo(int: i) -> str:
+  return str(i)
+```
+
 
 ### Exceptions (errors)
 
