@@ -174,7 +174,14 @@ Source: [W3School](https://www.w3schools.com/python/ref_set_update.asp)
 
 ### Dictionaries
 
-`d.items()` and `ErrorValue: too many values to unpack (expected 2)`
+#### Key-value types
+
+- Keys are unique within a dictionary and must be of an immutable data type such as strings, numbers, or tuples.
+- Values must not be unique and can be of any type
+
+*Source: [TutorialPoint](https://www.tutorialspoint.com/python/python_dictionary.htm)*
+
+#### `d.items()` and `ErrorValue: too many values to unpack (expected 2)`
 
 Source: [Career Karma](https://careerkarma.com/blog/python-valueerror-too-many-values-to-unpack-expected-2/)
 
