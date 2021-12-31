@@ -75,11 +75,29 @@ The value of pi is approximately 3.142.
 
 ### Lists
 
+#### Comparing lists with `.sort()` or `set(list)` and `==`
+
+Lists are not `==` if elements are at different indices.
+
+Instead sort lists in-situ using `.sort()` or compare sets using `set(list)`.
+
+```py
+# Example
+>>> [1, 2] == [2, 1]
+False
+
+>>> [1, 2].sort() == [2, 1].sort()
+True
+
+>>> set([1, 2]) == set([2, 1])
+True
+```
+
 #### Checks if element(s) exists in list
 
 Using **`in`** operator:
 
-```python
+```py
 if i in lst:
   print("Found")
   
