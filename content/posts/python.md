@@ -261,6 +261,25 @@ class CashRegister:
 
 `is` and `is not` are the identity operators. They are used to check if two values (or variables) are located on the same part of the **memory**.
 
+#### [`id(object)`](https://docs.python.org/3/library/functions.html#id) (memory-like address)
+
+[`id(object)`](https://docs.python.org/3/library/functions.html#id): Return the “identity” of an object. This is an integer which is guaranteed to be **unique** and **constant** for this object during its lifetime.
+
+[`hex(x)`](https://docs.python.org/3/library/functions.html#hex) Convert an integer number to a lowercase hexadecimal string prefixed with “0x”
+
+```py
+# Example
+obj = [1, 2]
+
+>>> id(obj)
+4466657600
+
+>>> hex(id(obj))
+'0x10a3bc940'
+```
+
+
+
 #### Attributes of an object
 
 **[`object.__dict__`](https://docs.python.org/2/library/stdtypes.html#object.dict)**: A dictionary or other mapping object used to store an object’s (writable) attributes. 
