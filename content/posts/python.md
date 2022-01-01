@@ -8,7 +8,7 @@ tags: ["python", "noob notes"]
 
 Context: These are noob notes on Python (mostly notes-to-self). They are incomplete by default.
 
-### Formatting and style
+## Formatting and style
 
 #### Indentation
 
@@ -37,6 +37,8 @@ result = some_function_that_takes_arguments(
 ```
 
 *Source: [PEP 8: Indentation](https://www.python.org/dev/peps/pep-0008/#indentation)*
+
+## Built-in
 
 ### Strings
 
@@ -202,23 +204,6 @@ Source: [W3School](https://www.w3schools.com/python/ref_set_update.asp)
 #### `d.items()` and `ErrorValue: too many values to unpack (expected 2)`
 
 Source: [Career Karma](https://careerkarma.com/blog/python-valueerror-too-many-values-to-unpack-expected-2/)
-
-### [`copy.deepcopy()`](https://docs.python.org/3/library/copy.html)
-
-```py
-import copy
-
-copy.copy(x) # Return a shallow copy of x.
-copy.deepcopy(x) # Return a deep copy of x.
-```
-
-> copy() is a shallow copy function. If the given argument is a compound data structure, for instance a list, then Python will create another object of the same type (in this case, a new list) but for everything inside the old list, only their reference is copied. Think of it like:
-
-```py
-newList = [elem for elem in oldlist]
-```
-
-*Source: [Stack Overflow](https://stackoverflow.com/a/32791606)*
 
 ### Objects
 
@@ -515,6 +500,143 @@ Parent(name: John Doe, age: 54)
 
 *Source: [DelftStack](https://www.delftstack.com/howto/python/python-get-class-name/)*
 
+### Reading Files
+
+#### **[`open()`](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)**
+Returns a file object, and is most commonly used with two arguments: `open(filename, mode)`.
+
+```py
+f = open('workfile.txt', 'r')
+```
+
+It is good practice to use the `with` keyword when dealing with file objects. The advantage is that the **file is properly closed** after its suite finishes, even if an exception is raised at some point. Using `with` is also much shorter than writing equivalent `try`-`finally` blocks:
+
+```py
+>>> with open('workfile.txt', 'r') as f:
+...     read_data = f.read()
+
+>>> # We can check that the file has been automatically closed.
+>>> f.closed
+True
+```
+
+After a file object is closed, either by a `with` statement or by calling `f.close()`, attempts to use the file object will automatically fail.
+
+
+| Character | Meaning                                                         |
+|-----------|-----------------------------------------------------------------|
+| 'r'       | open for reading (default)                                      |
+| 'w'       | open for writing, truncating the file first                     |
+| 'x'       | open for exclusive creation, failing if the file already exists |
+| 'a'       | open for writing, appending to the end of file if it exists     |
+| 'b'       | binary mode                                                     |
+| 't'       | text mode (default)                                             |
+| '+'       | open for updating (reading and writing)                         |
+
+*Source: Python docs [`open(file, mode)`](https://docs.python.org/3/library/functions.html#open)*
+
+#### [`f.read()`](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects)
+
+- Reads data and returns it as a **string** (in text mode) or **bytes object** (in binary mode). 
+- Optional argument `size` (`f.read(size)`): at most `size` characters (in text mode) or size bytes (in binary mode) are read and returned.
+- Without `size` argument, `f.read()` reads the entire contents of the file (your problem if the file is twice as large as your machine’s memory)
+- if the end of the file has been reached, `f.read()` will return an **empty string** (`''`).
+
+
+```py
+>>> f.read()
+'This is the entire file.\n'
+>>> f.read() # reached end of file
+''
+```
+
+#### [`f.readline()`](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects)
+
+- Reads a single line from the file
+- A newline character (`\n`) is left at the end of the string, and is only omitted on the last line of the file (if the file doesn’t end in a newline)
+- If `f.readline()` returns an **empty string** (`''`), the **end of the file** has been reached
+- you can **loop** over the file object
+
+```py
+# manual
+>>> f.readline()
+'This is the first line of the file.\n'
+>>> f.readline()
+'Second line of the file\n'
+>>> f.readline() # reached end of file
+''
+
+# looping (preferred)
+>>> for line in f:
+...     print(line, end='')
+...
+This is the first line of the file.
+Second line of the file
+```
+
+#### [`f.readlines()` or `list(f)`](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects)
+
+- Reads all the lines of a file in a **list**
+- Each **element** in the list is a string representing a line from the file
+
+```py
+# Example
+>>> lines = f.readlines()
+>>> print(lines)
+['This is the first line of the file.\n', 'Second line of the file\n']
+```
+
+#### [`str.split()`](https://docs.python.org/3.3/library/stdtypes.html?highlight=split#str.split): Used to split string into separate words
+
+[`str.split(sep=None, maxsplit=-1)`](https://docs.python.org/3.3/library/stdtypes.html?highlight=split#str.split)
+
+- Return a list of the words in the string, using *sep* as the delimiter string
+- If *maxsplit* is given, at most *maxsplit* splits are done (thus, the list will have at most `maxsplit+1` elements). 
+- If *maxsplit* is not specified or `-1`, then there is no limit on the number of splits (all possible splits are made).
+- If *sep* is given, consecutive delimiters are not grouped together and are deemed to delimit empty strings (for example, `'1,,2'.split(',')` returns `['1', '', '2']`)
+- If *sep* is not specified or is `None`, consecutive whitespace are regarded as a single separator, and the result will contain **no empty strings at the start or end** if the string has leading or trailing whitespace (for example, `' 1  2   3  '.split()` returns `['1', '2', '3']`)
+
+```py
+line = 'Hello how are you doing'
+words = line.split()
+print(words)
+>>> ['Hello', 'how', 'are', 'you', 'doing']
+```
+
+#### `str.lstrip()` `str.rstrip()` `str.strip()`: Used to remove whitespace
+
+[`str.lstrip([chars])`](https://docs.python.org/3.3/library/stdtypes.html?highlight=split#str.lstrip): Return a copy of the string with **leading** characters removed.
+
+[`str.rstrip([chars])`](https://docs.python.org/3.3/library/stdtypes.html?highlight=split#str.rstrip): Return a copy of the string with **trailing** characters removed. 
+
+[`str.strip([chars])`](https://docs.python.org/3.3/library/stdtypes.html?highlight=split#str.strip): Return a copy of the string with the **leading** and **trailing** characters removed. 
+
+
+If *chars* argument is omitted or `None`, **defaults to removing whitespace**.
+
+```py
+>>> '   spacious   '.lstrip()
+'spacious   '
+>>> '   spacious   '.rstrip()
+'   spacious'
+>>> '   spacious   '.strip()
+'spacious'
+```
+
+
+#### `f.write(string)` 
+
+- Writes the contents of *string* to the file, returning the number of characters written.
+
+```py
+# "w" for writing to file
+>>> outfile = open("text.txt", "w")
+>>> outfile.write('This is a test\n')
+15
+```
+
+
+
 ### Type hinting
 
 #### [`typing.Callable`](https://docs.python.org/3/library/typing.html#typing.Callable)
@@ -543,6 +665,42 @@ foo : Callable[[int], str] # function of (int) -> str.
 def foo(int: i) -> str:
   return str(i)
 ```
+
+### Exiting a Python program
+
+The **most preferred method** is `sys.exit()`, because `exit()` and `quit()` functions cannot be used in the operational and production codes. They can only be implemented if the site module is imported.
+
+Using **`sys.exit()`**: 
+- Can be used at any point of time without having to worry about the corruption in the code.
+- Syntax: `sys.exit(argument)`
+
+
+```py
+import sys 
+ 
+x = 50
+ 
+if x != 100: 
+    sys.exit("Values do not match")  
+else: 
+    print("Validation of values completed!!") 
+>>> Values do not match
+```
+
+Using **`quit()`**: 
+- As soon as the system encounters the `quit()` function, it terminates the execution of the program completely. 
+- The `exit()` function can be considered as an alternative to the `quit()` function, which enables us to terminate the execution of the program.
+
+
+```py
+for x in range(1,10):
+    print(x*10)
+    quit()
+# no output
+```
+
+
+*Source: [askpython.com](https://www.askpython.com/python/examples/exit-a-python-program)*
 
 
 ### Exceptions (errors)
@@ -673,3 +831,51 @@ toml       0.10.2
 wheel      0.37.0
 
 ```
+
+## Libraries
+
+### `import copy`
+
+#### [`copy.deepcopy()`](https://docs.python.org/3/library/copy.html)
+
+```py
+import copy
+
+copy.copy(x) # Return a shallow copy of x.
+copy.deepcopy(x) # Return a deep copy of x.
+```
+
+> copy() is a shallow copy function. If the given argument is a compound data structure, for instance a list, then Python will create another object of the same type (in this case, a new list) but for everything inside the old list, only their reference is copied. Think of it like:
+
+```py
+newList = [elem for elem in oldlist]
+```
+
+*Source: [Stack Overflow](https://stackoverflow.com/a/32791606)*
+
+### `import random`
+
+**[`random.choice(seq)`](https://docs.python.org/3/library/random.html#random.choice)**: Return a random element from the non-empty sequence *seq*. If *seq* is empty, raises IndexError.
+
+The sequence can be a string, a range, a list, a tuple or any other kind of sequence. *Source: [W3School](https://www.w3schools.com/python/ref_random_choice.asp)*
+
+**[`random.randint(a, b)`](https://docs.python.org/3/library/random.html#random.randint)**: 
+Return a random integer *N* such that `a <= N <= b`. Alias for `randrange(a, b+1)`.
+
+### `import os.path`: Used to check if file exists
+
+**[`os.path.exists(path)`](https://docs.python.org/3/library/os.path.html#os.path.exists)**: Return `True` if file exists.
+
+- If the file is in the same folder as the program, the *path* is just simply the **file name**.
+- Else you need to pass the full **file path** of the file
+- You should use the **forward-slash** (`/`) to separate the path. It’ll work across Windows, macOS, and Linux.
+
+```py
+import os.path
+
+file_exists = os.path.exists('readme.txt')
+print(file_exists)
+>>> True
+```
+
+*Source: [Pythontutorial](https://www.pythontutorial.net/python-basics/python-check-if-file-exists/)*
