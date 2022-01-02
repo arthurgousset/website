@@ -639,6 +639,22 @@ If *chars* argument is omitted or `None`, **defaults to removing whitespace**.
 
 ### Type hinting
 
+#### Forward type hinting: Used Class is hinted but not yet defined
+
+> When a type hint contains names that have not been defined yet, that definition may be expressed as a **string** literal, **to be resolved later**.
+
+*Source: [PEP484 on Type Hints](https://www.python.org/dev/peps/pep-0484/#forward-references)*
+
+
+
+```py
+# Example
+class Tree:
+    def __init__(self, left: 'Tree', right: 'Tree'):
+        self.left = left
+        self.right = right
+```
+
 #### [`typing.Callable`](https://docs.python.org/3/library/typing.html#typing.Callable)
 
 Requires import:
@@ -670,10 +686,9 @@ def foo(int: i) -> str:
 
 The **most preferred method** is `sys.exit()`, because `exit()` and `quit()` functions cannot be used in the operational and production codes. They can only be implemented if the site module is imported.
 
-Using **`sys.exit()`**: 
-- Can be used at any point of time without having to worry about the corruption in the code.
-- Syntax: `sys.exit(argument)`
-
+**[`sys.exit([arg])`](https://docs.python.org/3/library/sys.html#sys.exit)**: 
+- This is implemented by raising the `SystemExit` exception, so **cleanup actions** specified by finally clauses of `try` statements are honored, and it is **possible to intercept the exit attempt** at an outer level.
+- The optional argument *arg* can be an **integer** giving the **exit status** (defaulting to zero), or another type of object. If it is an integer, zero is considered “successful termination” and any nonzero value is considered “abnormal termination” by shells and the like.
 
 ```py
 import sys 
