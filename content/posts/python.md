@@ -46,7 +46,7 @@ result = some_function_that_takes_arguments(
 
 *Source: [RealPython](https://realpython.com/python-formatted-output/#the-string-format-method-simple-replacement-fields)* (for all notes on formatted strings below)
 
-**Syntax**: **`{[<name>][!<conversion>][:<format_spec>]}`**
+##### **Syntax**: **`{[<name>][!<conversion>][:<format_spec>]}`**
 
 | Component     | Meaning                                                                   |
 |---------------|---------------------------------------------------------------------------|
@@ -54,7 +54,7 @@ result = some_function_that_takes_arguments(
 | **`!<conversion>`**  | Indicates which standard Python function to use to perform the conversion |
 | **`:<format_spec>`** | Specifies more detail about how the value should be converted             |
 
-**`<name>`**:
+##### **`<name>`**:
 - indicates which **arguments** are passed (e.g. `a`, `b`, `c` in example below)
 
 ```py
@@ -77,7 +77,7 @@ f'{obj.attr}'
 ```
 
 
-**`!<conversion>`**:
+##### **`!<conversion>`**:
 - format an object as a **string**
 
 | Value | Meaning              |
@@ -86,7 +86,7 @@ f'{obj.attr}'
 | `!r`    | Convert with `repr()`  |
 | `!a`    | Convert with `ascii()` |
 
-**`:<format_spec>`**:
+##### **`:<format_spec>`**:
 
 - represents the `.format()` functionality
 - `:[[<fill>]<align>][<sign>][#][0][<width>][<group>][.<prec>][<type>]`
@@ -104,7 +104,7 @@ f'{obj.attr}'
 | `.<prec>`      | Specifies the number of digits after the decimal point for floating-point presentation types, and the maximum output width for string presentations types |
 | `<type>`       | Specifies the presentation type, which is the type of conversion performed on the corresponding argument                                                  |
 
-**`<type>`**:
+##### **`<type>`**:
 
 -  specifies the presentation
 
@@ -140,12 +140,12 @@ f'{obj.attr}'
 ```
 
 
-`[[<fill>]<align>]`:
+##### `[[<fill>]<align>]`:
 - controls where output is positioned within the specified field width
 - `<width>` has to be specified, else `<fill>` and `<align>` are ignored
 
 
-**`<align>`**:
+##### **`<align>`**:
 
 | Option | Action           |
 |---------|------------------|
@@ -162,7 +162,7 @@ f'{obj.attr}'
 '      +1'
 ```
 
-**`<fill>`**:
+##### **`<fill>`**:
 - specifies how to fill in **extra space** when the formatted value doesn’t completely fill the output width
 
 
@@ -186,7 +186,7 @@ f'{obj.attr}'
 '123.45679'
 ```
 
-**`<sign>`**:
+##### **`<sign>`**:
 - controls whether a *sign* appears in numeric output 
 
 
@@ -209,7 +209,7 @@ f'{obj.attr}'
 '-1'
 ```
 
-**`<width>`**: 
+##### **`<width>`**: 
 - specifies the **minimum width** of the output field
 - if output is longer, minimum is ignored
 
@@ -224,7 +224,7 @@ f'{obj.attr}'
 '1000'
 ```
 
-**`<group>`**:
+##### **`<group>`**:
 - add a *separator* character in **numeric output** (either a comma character `,` or an underscore character `_`)
 
 ```py
@@ -238,7 +238,7 @@ f'{obj.attr}'
 '1_000_000'
 ```
 
-**`.<prec>`**: 
+##### **`.<prec>`**: 
 - **decimal digits** for floating point
 
 ```py
@@ -263,9 +263,6 @@ f'{obj.attr}'
 '1.000'
 ```
 
-
-
-*Source: Python docs [7.1. Fancier Output Formatting](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)*
 
 #### [`ord(c)`](https://docs.python.org/3/library/functions.html#ord) and [`chr(i)`](https://docs.python.org/3/library/functions.html#chr)
 
