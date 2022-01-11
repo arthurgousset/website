@@ -44,13 +44,225 @@ result = some_function_that_takes_arguments(
 
 #### f-strings (formatted string literals)
 
+*Source: [RealPython](https://realpython.com/python-formatted-output/#the-string-format-method-simple-replacement-fields)* (for all notes on formatted strings below)
+
+##### **Syntax**: **`{[<name>][!<conversion>][:<format_spec>]}`**
+
+| Component     | Meaning                                                                   |
+|---------------|---------------------------------------------------------------------------|
+| **`<name>`**        | Specifies the source of the value to be formatted                         |
+| **`!<conversion>`**  | Indicates which standard Python function to use to perform the conversion |
+| **`:<format_spec>`** | Specifies more detail about how the value should be converted             |
+
+##### **`<name>`**:
+- indicates which **arguments** are passed (e.g. `a`, `b`, `c` in example below)
+
 ```py
->>> import math
->>> print(f'The value of pi is approximately {math.pi:.3f}.')
-The value of pi is approximately 3.142.
+# with variables
+a = 1
+b = 2
+c = 3
+f'{a} {b} {c}'
+
+# with list
+L = ['foo', 'bar', 'baz']
+f'{L[0]} {L[1]} {L[3]}'
+
+# with dictionary
+d = {'key1': 'foo', 'key2': 'bar'}
+f'{d[key1]} {d[key2]}'
+
+# with arbitrary object attribute
+f'{obj.attr}'
 ```
 
-*Source: Python docs [7.1. Fancier Output Formatting](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)*
+
+##### **`!<conversion>`**:
+- format an object as a **string**
+
+| Value | Meaning              |
+|-------|----------------------|
+| `!s`    | Convert with `str()`   |
+| `!r`    | Convert with `repr()`  |
+| `!a`    | Convert with `ascii()` |
+
+##### **`:<format_spec>`**:
+
+- represents the `.format()` functionality
+- `:[[<fill>]<align>][<sign>][#][0][<width>][<group>][.<prec>][<type>]`
+
+| Subcomponent | Effect                                                                                                                                                    |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `:`            | Separates the <format_spec> from the rest of the replacement field                                                                                        |
+| `<fill> `      | Specifies how to pad values that don’t occupy the entire field width                                                                                      |
+| `<align>`      | Specifies how to justify values that don’t occupy the entire field width                                                                                  |
+| `<sign>`       | Controls whether a leading sign is included for numeric values                                                                                            |
+| `#`            | Selects an alternate output form for certain presentation types                                                                                           |
+| `0`            | Causes values to be padded on the left with zeros instead of ASCII space characters                                                                       |
+| `<width>`      | Specifies the minimum width of the output                                                                                                                 |
+| `<group>`      | Specifies a grouping character for numeric output                                                                                                         |
+| `.<prec>`      | Specifies the number of digits after the decimal point for floating-point presentation types, and the maximum output width for string presentations types |
+| `<type>`       | Specifies the presentation type, which is the type of conversion performed on the corresponding argument                                                  |
+
+##### **`<type>`**:
+
+-  specifies the presentation
+
+| Value  | Presentation Type             |
+|--------|-------------------------------|
+| `b`      | Binary integer                |
+| `c`      | Single character              |
+| `d`      | Decimal integer               |
+| `e` or `E` | Exponential                   |
+| `f` or `F` | Floating point                |
+| `g` or `G` | Floating point or Exponential |
+| `o`      | Octal integer                 |
+| `s`      | String                        |
+| `x` or `X` | Hexadecimal integer           |
+| `%`      | Percentage                    |
+
+```py
+# ':b' binary
+>>> f'{1:b}'
+'1'
+>>> f'{5:b}'
+'101'
+>>> f'{10:b}'
+'1010'
+
+# '%' percentage
+>>> f'{0.01:%}'
+'1.000000%'
+>>> f'{0.01:.1%}'
+'1.0%'
+>>> f'{0.01:.0%}'
+'1%'
+```
+
+
+##### `[[<fill>]<align>]`:
+- controls where output is positioned within the specified field width
+- `<width>` has to be specified, else `<fill>` and `<align>` are ignored
+
+
+##### **`<align>`**:
+
+| Option | Action           |
+|---------|------------------|
+| `<`       | left-justifies   |
+| `>`       | right-justifies  |
+| `^`       | centers          |
+| `=`       | left-aligns sign |
+    
+```py
+# '<'
+>>> f'{1:=+8}'
+'+      1'
+>>> f'{1:+8}' # comparison without '='
+'      +1'
+```
+
+##### **`<fill>`**:
+- specifies how to fill in **extra space** when the formatted value doesn’t completely fill the output width
+
+
+```py
+>>> f'{1:+>8}'
+'+++++++1'
+>>> f'{1:+<8}'
+'1+++++++'
+```
+    
+
+```py
+# '.f'
+>>> f'{123.456789:.2f}'
+'123.46'
+>>> f'{123.456789:.3f}'
+'123.457'
+>>> f'{123.456789:.4f}'
+'123.4568'
+>>> f'{123.456789:.5f}'
+'123.45679'
+```
+
+##### **`<sign>`**:
+- controls whether a *sign* appears in numeric output 
+
+
+| Sign | Action                                      |
+|------|---------------------------------------------|
+| `+`    | incl. leading sign for **positive** and **negative** values |
+| `-`    | incl. leading sign for **negative** values              |
+
+```py
+# '+' pos and neg values
+>>> f'{1:+}' 
+'+1'
+>>> f'{-1:+}'
+'-1'
+
+# '-' only neg values
+>>> f'{1:-}'
+'1'
+>>> f'{-1:-}'
+'-1'
+```
+
+##### **`<width>`**: 
+- specifies the **minimum width** of the output field
+- if output is longer, minimum is ignored
+
+```py
+>>> f'{1:8}'
+'       1'
+>>> f'{1:4}'
+'   1'
+>>> f'{1:2}'
+' 1'
+>>> f'{1000:2}' # ignored if longer
+'1000'
+```
+
+##### **`<group>`**:
+- add a *separator* character in **numeric output** (either a comma character `,` or an underscore character `_`)
+
+```py
+>>> f'{1000:,}'
+'1,000'
+>>> f'{1000:_}'
+'1_000'
+>>> f'{1000000:,}'
+'1,000,000'
+>>> f'{1000000:_}'
+'1_000_000'
+```
+
+##### **`.<prec>`**: 
+- **decimal digits** for floating point
+
+```py
+# decimals
+>>> f'{1:.0f}'
+'1'
+>>> f'{1:.1f}'
+'1.0'
+>>> f'{1:.2f}'
+'1.00'
+>>> f'{1:.3f}'
+'1.000'
+
+# with width
+>>> f'{1:4.0f}'
+'   1'
+>>> f'{1:4.1f}'
+' 1.0'
+>>> f'{1:4.2f}'
+'1.00'
+>>> f'{1:4.3f}'
+'1.000'
+```
+
 
 #### [`ord(c)`](https://docs.python.org/3/library/functions.html#ord) and [`chr(i)`](https://docs.python.org/3/library/functions.html#chr)
 
