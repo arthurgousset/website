@@ -10,7 +10,7 @@ Context: These are noob notes on Python (mostly notes-to-self). They are incompl
 
 ## Formatting and style
 
-#### Indentation
+### Indentation
 
 Closing brace/bracket/parenthesis on multiline constructs:
 
