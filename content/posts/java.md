@@ -1,6 +1,6 @@
 ---
 title: "🤷‍♂️ Java (noob notes)"
-date: 2021-01-10T12:00:00+01:00
+date: 2022-01-10T12:00:00+01:00
 draft: false
 showtoc: true
 tags: ["java", "noob notes"]
@@ -138,8 +138,8 @@ Example:
 // Some ArrayList instance: 
 // e.g. ArrayList<String> lst = ArrayList<String>();
 lst.removeIf( s -> lst.indexOf(s) % 2 == 0);
-
 ```
+
 
 ## Package: [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html)
 
@@ -221,6 +221,7 @@ public final class Array
 extends Object
 ```
 
+
 ### Class: [java.lang.Object](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html)
 
 ```java
@@ -230,6 +231,7 @@ public class Object
 - Class Object is the root of the class hierarchy. 
 - Every class has Object as a superclass. 
 - All objects, including arrays, implement the methods of this class.
+
 
 #### [`obj.clone()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone())
 
@@ -246,6 +248,44 @@ The general intent is that, for any object `x`, the expression:
 - `x.clone().equals(x)` will be **true**.
 
 N.B: ⚠️ But these are not absolute requirements! ⚠️ 
+
+#### [`obj.equals(Object obj)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object))
+
+```java
+public boolean equals(Object obj)
+```
+
+Indicates whether some other object is "equal to" this one, true/false).
+
+The equals method implements an equivalence relation on non-null object references:
+
+* It is reflexive: for any non-null reference value x, x.equals(x) should return true.
+* It is symmetric: for any non-null reference values x and y, x.equals(y) should return true if and only if y.equals(x) returns true.
+* It is transitive: for any non-null reference values x, y, and z, if x.equals(y) returns true and y.equals(z) returns true, then x.equals(z) should return true.
+* It is consistent: for any non-null reference values x and y, multiple invocations of x.equals(y) consistently return true or consistently return false, provided no information used in equals comparisons on the objects is modified.
+* For any non-null reference value x, x.equals(null) should return false.
+
+
+#### [`getClass()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass())
+
+```java
+public final Class<?> getClass()
+```
+
+Returns the runtime class of this Object.
+
+
+#### [`toString()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString())
+
+```java
+public String toString()
+```
+
+Returns a string representation of the object.
+
+In general, the toString method returns a string that "textually represents" this object:
+- The result should be a concise but informative representation that is easy for a person to read. 
+- It is recommended that all subclasses **override** this method.
 
 
 ### Class: [java.lang.Character](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html)
