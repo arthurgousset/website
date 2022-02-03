@@ -265,6 +265,41 @@ The equals method implements an equivalence relation on non-null object referenc
 * It is consistent: for any non-null reference values x and y, multiple invocations of x.equals(y) consistently return true or consistently return false, provided no information used in equals comparisons on the objects is modified.
 * For any non-null reference value x, x.equals(null) should return false.
 
+#### [`@Override obj.equals(Object obj)`](https://www.technofundo.com/tech/java/equalhash.html)
+
+```java
+@Override // overrides Object equals() method (for my own objects definition)
+public boolean equals(Object obj) {
+        // reflexivity
+        if(this == obj) { return true; } 
+        // comparing apples and pears
+        if((obj == null) || (obj.getClass() != this.getClass())) { return false; }
+        // Can now safely cast Pair type onto obj
+        Pair otherPair = (Pair) obj;
+        // equal is x and y are equal
+        return x == otherPair.get_x() && y == otherPair.get_y();
+}
+
+@Override 
+public int hashCode() { 
+    int hash = 7;
+    return x * hash - y * hash;
+}
+```
+
+#### [`@Override obj.hashCode(Object obj)`](https://www.technofundo.com/tech/java/equalhash.html)
+
+> When we override `equals()`, it is recommended to also override the `hashCode()` method. If we don’t do so, equal objects may get different hash-values; and hash based collections, including *HashMap*, *HashSet*, and *Hashtable* do not work properly.
+
+*Source: [Geekforgeeks](https://www.geeksforgeeks.org/overriding-equals-method-in-java/)*
+
+```java
+@Override 
+public int hashCode() { 
+    int hash = 7;
+    return x * hash - y * hash;
+}
+```
 
 #### [`getClass()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass())
 
@@ -450,9 +485,83 @@ public String toUpperCase()
 
 Converts all of the characters in this String to upper case using the rules of the default locale.
 
+
+### Class: [java.lang.StringBuilder](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html)
+
+```java
+public final class StringBuilder
+extends Object
+implements Serializable, Comparable<StringBuilder>, CharSequence
+```
+
+A **mutable** sequence of characters. The principal operations on a StringBuilder are the `append` (at end) and `insert` (at index) methods, which are overloaded so as to accept data of any type.
+
+If `sb` refers to an instance of a StringBuilder, then `sb.append(x)` has the same effect as `sb.insert(sb.length(), x)`.
+
+Use `sb.toString()` to convert the object into an immutable String.
+
+
+#### Constructor: [`sb.StringBuilder()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#%3Cinit%3E()) [`sb.StringBuilder(String str)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#%3Cinit%3E(java.lang.String))
+
+Constructs a string builder initialized to the contents of the specified string.
+
+```java
+StringBuilder sbEmpty = new StringBuilder();
+StringBuilder sbExisting = new StringBuilder("Hello");
+```
+
+
+#### [`sb.toString()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#toString())
+
+Returns a string representing the data in this sequence.
+
+
+#### [`sb.append(Object obj)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(java.lang.Object))
+
+Appends the string representation of the Object argument.
+
+Exists with various methods signatures:
+
+- [`append(boolean b)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(boolean)): Appends the string representation of the boolean argument to the sequence.
+- [`append(char c)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(char)): Appends the string representation of the char argument to this sequence.
+- [`append(double d)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(double)): Appends the string representation of the double argument to this sequence.
+- [`append(float f)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(float)): Appends the string representation of the float argument to this sequence.
+- [`append(int i)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(int)): Appends the string representation of the int argument to this sequence.
+- [`append(long lng)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(long)): Appends the string representation of the long argument to this sequence.
+- [`append(Object obj)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(java.lang.Object)): Appends the string representation of the Object argument.
+- [`append(String str)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#append(java.lang.String)): Appends the specified string to this character sequence.
+
+
+#### [`sb.delete(int start, int end)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html#delete(int,int))
+
+Removes the characters in a substring of this sequence. The substring begins at the specified start and extends to the character at index end - 1 or to the end of the sequence if no such character exists. If start is equal to end, no changes are made.
+
+
+#### [`sb.deleteCharAt(int index)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html#deleteCharAt(int))
+
+```java
+public StringBuilder deleteCharAt(int index)
+```
+
+Removes the char at the specified position in this sequence. This sequence is shortened by one char.
+
+
+#### [`sb.replace(int start, int end, String str)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html#replace(int,int,java.lang.String))
+
+```java
+public StringBuilder replace​(int start, int end, String str)
+```
+
+Parameters:
+- `start` - The beginning index, inclusive.
+- `end` - The ending index, exclusive.
+- `str` - String that will replace previous contents.
+
+
 ## Package: [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html)
 
 Contains the **collections** framework, some internationalization support classes, a service loader, properties, **random number generation**, string parsing and **scanning** classes, base64 encoding and decoding, a bit array, and several miscellaneous utility classes.
+
 
 ### Class: [`ArrayList<E>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html)
 
@@ -498,15 +607,10 @@ Removes the element at the specified position in this list. Shifts any subsequen
 public E remove(int index)
 ```
 
-#### [`lst.removeIf(predicate)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html#removeIf(java.util.function.Predicate))
 
-```java
-public boolean removeIf(Predicate<? super E> filter)
-```
+#### `lst.removeIf(predicate)`
 
-Removes all of the elements of this collection that **satisfy the given predicate**.
-
-For context, [`Interface Predicate<T>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html) is a **functional interface** and can therefore be used as the assignment target for a **lambda expression** or method reference.
+See in Interface `Colletion<E>` method `c.removeIf(Predicate<?superE>filter)` in this doc.
 
 
 #### [`lst.indexOf(Object o)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html#indexOf(java.lang.Object))
@@ -516,3 +620,198 @@ public int indexOf(Object o)
 ```
 
 Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+
+### Interface: [`Collection<E>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html)
+
+```java
+public interface Collection<E>
+extends Iterable<E>
+```
+
+The root interface in the collection hierarchy.
+
+
+#### [`c.removeIf(Predicate<? super E> filter)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html#removeIf(java.util.function.Predicate))
+
+Removes all of the elements of this collection that **satisfy the given predicate**.
+
+For context, [`Interface Predicate<T>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html) is a **functional interface** and can therefore be used as the assignment target for a **lambda expression** or method reference.
+
+### Interface: [`Map<K,V>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html)
+
+- An object that maps keys to values.
+- A map cannot contain duplicate keys; 
+- each key can map to at most one value. 
+
+
+Type Parameters:
+- `K`: the type of keys maintained by this map
+- `V`: the type of mapped values
+
+This interface takes the place of the Dictionary class, which was a totally abstract class rather than an interface.
+
+### Class: [`HashMap<K,V>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashMap.html)
+
+```java
+public class HashMap<K,V>
+extends AbstractMap<K,V>
+implements Map<K,V>, Cloneable, Serializable
+```
+
+This implementation provides constant-time performance for the basic operations (`get` and `put`), assuming the hash function disperses the elements properly among the buckets.
+
+Useful methods: 
+- `m.get(Object key)`
+- `m.put(K key, V value)`
+- `m.size()`
+- `m.remove(Object key)`
+- `m.clear()`
+- `m.clone()`
+- `m.containsKey(Object key)`
+- `m.containsValue(Object value)`
+- `m.entrySet()` returns `Set<Map.Entry<K,V>>`
+- `m.keySet()` returns `Set<K>`
+
+#### For each Map.Entry pair in entrySet()
+
+```java
+// HashMap<K, V> m = new HashMap();
+
+for (Map.Entry<K, V> pair: m.entrySet()) {
+    // pair.getKey()
+    // pair.getValue();
+}
+```
+
+Source: [zetcode.com](https://zetcode.com/java/hashmapiterate/)
+
+#### Iterator over entrySet()
+
+```java
+// HashMap<K, V> m = new HashMap();
+
+Iterator< Map.Entry<K, V> > it = items.entrySet().iterator();
+
+while (it.hasNext()) {
+    Map.Entry<K, V> pair = it.next();
+    // pair.getKey()
+    // pair.getValue();
+}
+```
+
+Source: [zetcode.com](https://zetcode.com/java/hashmapiterate/)
+
+
+### Interface: [`Set<E>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html)
+
+```java
+public interface Set<E>
+extends Collection<E>
+```
+
+A collection that contains no duplicate elements. More formally, sets contain no pair of elements `e1` and `e2` such that `e1.equals(e2)`, and at most one `null` element.
+
+All known implementing classes:
+- AbstractSet
+- HashSet
+- LinkedHashSet
+- TreeSet
+- *more excl. for simplicity*
+
+
+### Class: [`HashSet<E>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html)
+
+```java
+public class HashSet<E>
+extends AbstractSet<E>
+implements Set<E>, Cloneable, Serializable
+```
+
+This class implements the *Set* interface, backed by a hash table (actually a *HashMap* instance). It makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time. This class permits the null element.
+
+
+#### [`Set s = new Hashset()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#%3Cinit%3E())
+
+Constructs a new, empty set.
+
+
+#### [`Set s = new HashSet(Collection<? extends E> c)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#%3Cinit%3E(java.util.Collection))
+
+Constructs a new set containing the elements in the specified collection `c`.
+
+
+#### [`s.add(E e)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#add(E))
+
+```java
+public boolean add(E e)
+```
+
+Adds the specified element to this set if it is not already present. 
+
+If this set already contains the element, the call leaves the set unchanged and returns false.
+
+
+#### [`s.clear()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#clear())
+
+```java
+public void clear()
+```
+
+Removes all of the elements from this set. The set will be empty after this call returns.
+
+#### [`s.clone()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#clone())
+
+```java
+public Object clone()
+```
+
+Returns a **shallow copy** of this HashSet instance: the elements themselves are not cloned.
+
+
+#### [`contains(Object o)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#contains(java.lang.Object))
+
+```java
+public boolean contains(Object o)
+```
+
+Returns true if this set contains the specified element.
+
+
+#### [`s.isEmpty()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#isEmpty())
+
+```java
+public boolean isEmpty()
+```
+
+Returns true if this set contains no elements.
+
+
+#### [`s.remove(Object o)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#remove(java.lang.Object))
+
+```java
+public boolean remove(Object o)
+```
+
+Removes the specified element from this set if it is present.
+
+Returns true if this set contained the element (or equivalently, if this set changed as a result of the call).
+
+
+#### [`s.size()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#size())
+
+```java
+public int size()
+```
+
+Returns the number of elements in this set (its cardinality).
+
+#### [`s.toArray()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html#toArray())
+
+```java
+public Object[] toArray()
+```
+
+Returns an array containing all of the elements in this collection.
+
+#### [`equals`]
