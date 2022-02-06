@@ -6,6 +6,7 @@ showtoc: true
 tags: ["javascript", "noob notes"]
 ---
 
+- [JavaScript References by Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript#reference)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [RealPython: Python vs JavaScript for Pythonistas](https://realpython.com/python-vs-javascript/)
 
