@@ -58,7 +58,7 @@ params:
     # Profile Mode
     profileMode:
         enabled: true
-        title: "Arthur Gousset" # optional default will be site title
+        title: "0xArthur.xyz" # optional default will be site title
         subtitle: "Crypto PM working on [identity](https://docs.celo.org/celo-codebase/protocol/identity) for [Celo](https://celo.org/) 🧑‍🚀"
         imageUrl: "https://pbs.twimg.com/profile_images/1433747018468450305/EvOLBFZE_400x400.jpg" # optional
         imageTitle: # optional
@@ -91,11 +91,9 @@ params:
 
     socialIcons: # optional
         - name: github
-          url: "https://github.com/arthurgousset"
+          url: "https://github.com/0xarthurxyz"
         - name: twitter
           url: "https://twitter.com/0xArthurxyz"
-        - name: linkedin
-          url: "https://www.linkedin.com/in/arthur-gousset/"
 
     editPost:
         URL: "https://github.com/0xarthurxyz/0xArthurxyz.github.io/blob/main/content"

@@ -4,11 +4,12 @@ title: "Who Dis?"
 draft: false
 ---
 
-👋 I'm [Arthur](https://twitter.com/Arthur__Gousset).  I love building products that maximise impact 🚀
+👋 I'm [Arthur](https://twitter.com/0xArthurxyz).  I love building products that maximise impact 🚀
 
 Why? Because choosing a career might be the most important ethical decision of my life.
 
-According to [80,000 Hours](https://80000hours.org/make-a-difference-with-your-career/): 
+According to [80,000 Hours](https://80000hours.org/make-a-difference-with-your-career/):
+
 > From adulthood, you’ll spend almost half your waking hours on your career.
 
 > You have about 80,000 hours in your career: 40 hours per week, 50 weeks per year, for 40 years.
@@ -23,8 +24,6 @@ I'm also a board member on the advisory board of [Kontrol](https://www.kontrol.t
 
 ### Previously
 
-I developed quantitative approaches to early-stage investing (👨‍💻) and worked on the investment team at [Atrum](https://www.linkedin.com/company/atrumglobal/about/), a private investment office in London (🇬🇧), which specialises in venture and growth equity investments.
+I developed quantitative approaches to early-stage investing (👨‍💻) and worked on the investment team at a private investment office in London (🇬🇧), which specialises in venture and growth equity investments.
 
 I have a background in computer science and economics, and spent some time studying at ETH Zurich, Birkbeck College, and the University of Bristol.
-
-If you're interested, here is a partial list of [things that changed the way I see things](/tags/change/). I borrowed this idea from [Julius Tarng](https://web.archive.org/web/20210509193852/https://tarng.com/notes.html).
