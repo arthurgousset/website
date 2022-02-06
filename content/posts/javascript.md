@@ -72,9 +72,7 @@ logPoint(obj);
 logName(obj);
 ```
 
-Surpises with TS
-
-Empty types: 
+Surpises with TS: Empty types
 
 > We can see that { k: 10 } has all of the properties that Empty does, because Empty has no properties. Therefore, this is a valid call
 
@@ -88,3 +86,7 @@ function fn(arg: Empty) {
 // No error, but this isn't an 'Empty' ?
 fn({ k: 10 });
 ```
+
+### TypeScript Handbook
+
+- [ ] Read [about page](https://www.typescriptlang.org/docs/handbook/intro.html) on handbook (3min)
