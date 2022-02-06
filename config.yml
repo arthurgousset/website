@@ -59,7 +59,7 @@ params:
     profileMode:
         enabled: true
         title: "0xArthur.xyz" # optional default will be site title
-        subtitle: "Crypto PM working on [identity](https://docs.celo.org/celo-codebase/protocol/identity) for [Celo](https://celo.org/) 🧑‍🚀"
+        subtitle: "Crypto PM working on identity for Celo 🧑‍🚀"
         imageUrl: "https://pbs.twimg.com/profile_images/1433747018468450305/EvOLBFZE_400x400.jpg" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
