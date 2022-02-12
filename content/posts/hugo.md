@@ -43,3 +43,25 @@ Build and host locally `hugo server -D`
 6. Press `Enter`
 
 Source: [Stack Overflow](https://stackoverflow.com/a/68539272)
+
+### Exclude some files
+
+In `config.yml`, to exclude specific files from the `content` and `data` directories when rendering your site, set `ignoreFiles` to one or more regular expressions to match against the absolute file path.
+
+To ignore files ending with `.foo` or `.boo`:
+
+```yaml
+ignoreFiles:
+- \.foo$
+- \.boo$
+```
+
+To ignore a file using the absolute file path:
+
+```yaml
+ignoreFiles:
+- ^/home/user/project/content/test\.md$
+```
+
+
+Source: [gohugo.io  - Ignore Content and Data Files when Rendering](https://gohugo.io/getting-started/configuration/#ignore-content-and-data-files-when-rendering)
