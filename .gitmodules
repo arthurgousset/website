@@ -1,3 +1,6 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "content/posts/noob-notes"]
+	path = content/posts/noob-notes
+	url = https://github.com/0xarthurxyz/noob-notes.git
