@@ -68,7 +68,7 @@ params:
             # - name: TLDRs
             #   url: posts/
             # - name: Noob Notes
-            #   url: tags/noob-notes
+            #   url: noob-notes/
               
 
     # Uncomment if you want posts on the homepage instead of profileMode
