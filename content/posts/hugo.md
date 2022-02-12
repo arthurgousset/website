@@ -22,7 +22,14 @@ Clone repo and submodules (e.g. themes):
 git clone --recurse-submodules <repo>
 ```
 
-Source: [How to "git clone" including submodules?](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules)
+Fetch and merge updates in submodule:
+
+```bash
+git submodule update --remote
+```
+
+_Source: [Git docs - 7.11 Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)_
+
 
 Build and host locally `hugo server -D`
 
