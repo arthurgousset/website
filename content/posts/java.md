@@ -94,14 +94,41 @@ for (int num : marks) {
 *Source: [Geekforgeeks](https://www.geeksforgeeks.org/for-each-loop-in-java/)*
 
 
-### while
+### switch
 
-// TODO
+- The `default` keyword specifies some code to run if there is no case match
+- When Java reaches a `break` keyword, it breaks out of the switch block. This will stop the execution of more code and case testing inside the block.
 
+```java
+int day = 4;
 
-### do while
+switch (day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  case 5:
+    System.out.println("Friday");
+    break;
+  case 6:
+    System.out.println("Saturday");
+    break;
+  case 7:
+    System.out.println("Sunday");
+    break;
+}
+// Outputs "Thursday" (day 4)
+```
 
-// TODO
+*Source: [W3School](https://www.w3schools.com/java/java_switch.asp)*
 
 
 ## Lambda expression
@@ -138,6 +165,46 @@ Example:
 // Some ArrayList instance: 
 // e.g. ArrayList<String> lst = ArrayList<String>();
 lst.removeIf( s -> lst.indexOf(s) % 2 == 0);
+```
+
+## Inheritance
+
+### Subclass Constructors
+
+Invocation of a superclass constructor must be the first line in the subclass constructor.
+
+The syntax for calling a superclass constructor is:
+
+- `super();` the superclass no-argument constructor is called, or
+- `super(parameter list);`: the superclass constructor with a matching parameter list is called.
+
+*Source: [Oracles Java Tutorials](https://docs.oracle.com/javase/tutorial/java/IandI/super.html)*
+
+```java
+// < Child >.java
+public class < Parent > {
+    
+    // attributes
+    int param1;
+    int param2;
+    
+    // constructor
+    < Parent >( int a, int b) {
+        param1 = a; 
+        param2 = b;
+    }
+}
+
+// < Child >.java
+public class < Child > extends < Parent > {
+    
+    // constructor
+    < Child >( int param1, int param2) {
+		super(param1, param2); // calls parent constructor
+    }
+}
+
+
 ```
 
 
@@ -485,6 +552,18 @@ public String toUpperCase()
 
 Converts all of the characters in this String to upper case using the rules of the default locale.
 
+#### [`s.compareTo(s2)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String))
+
+```java
+public int compareTo(String anotherString)
+```
+
+Compares two strings lexicographically. The comparison is based on the Unicode value of each character in the strings. 
+
+- **negative** integer: if `s` lexicographically precedes the argument string `s2`
+- **positive** integer: if `s` lexicographically follows the argument string `s2`
+- **0**: when the `s.equals(s2)` returns true.
+
 
 ### Class: [java.lang.StringBuilder](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html)
 
@@ -620,6 +699,51 @@ public int indexOf(Object o)
 ```
 
 Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+### Class: [Scanner](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html)
+
+A simple text scanner which can parse primitive types and strings using regular expressions.
+
+A Scanner breaks its input into tokens using a delimiter pattern, which by default matches whitespace. The resulting tokens may then be converted into values of different types using the various next methods.
+
+The default whitespace delimiter used by a scanner is as recognized by [`Character.isWhitespace()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html#isWhitespace(int)). 
+
+#### [Constructors](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html) 
+
+- `Scanner(File source)`: Constructs a new Scanner that produces values scanned from the specified file.
+- `Scanner(String source)`: Constructs a new Scanner that produces values scanned from the specified input stream.
+- `Scanner(InputStream source)`: Constructs a new Scanner that produces values scanned from the specified string.
+- (more available)
+
+#### [`sc.useDelimiter(String pattern)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html#useDelimiter(java.lang.String))
+
+Sets this scanner's delimiting pattern to a pattern constructed from the specified String.
+
+```java
+String input = "1 fish 2 fish red fish blue fish";
+Scanner sc = new Scanner(input).useDelimiter("\\s*fish\\s*");
+```
+
+#### [`sc.close()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html#close())
+
+Closes this scanner.
+
+#### [`sc.hasNext()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html#hasNext()) variations
+
+- sc.hasNextInt()
+- sc.hasNextLine()
+- [`sc.hasNext(String pattern)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html#hasNext(java.lang.String)): Returns true if the next token matches the pattern constructed from the specified string.
+
+
+#### [`sc.next()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html#next())
+
+Finds and returns the next complete token from this scanner.
+
+- [`sc.next(String pattern)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html#next(java.lang.String)): Returns the next token if it matches the pattern constructed from the specified string.
+- [`sc.nextInt()`]: Scans the next token of the input as an int.
+- [`sc.nextLine()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html#nextLine()): Advances this scanner past the current line and returns the input that was skipped.
+
+
 
 
 ### Interface: [`Collection<E>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html)
