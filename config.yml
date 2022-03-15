@@ -23,10 +23,10 @@ menu:
         #   name: Tags
         #   url: /tags
         #   weight: 20
-        # - name: Search
-        #   url: search/
-        #   weight: 2
-        - name: Who Dis?
+        - name: Search
+          url: search/
+          weight: 2
+        - name: who dis?
           url: about
           weight: 3
 
@@ -66,8 +66,8 @@ params:
         imageHeight: 120 # custom size
         buttons:
             # - name: TLDRs
-            #   url: posts/
-            # - name: Noob Notes
+            #   url: tldr/
+            # - name: Noob notes
             #   url: noob-notes/
               
 
