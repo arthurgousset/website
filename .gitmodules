@@ -4,6 +4,3 @@
 [submodule "content/posts/noob-notes"]
 	path = content/posts/noob-notes
 	url = https://github.com/0xarthurxyz/noob-notes.git
-[submodule "content/tldr"]
-	path = content/tldr
-	url = https://github.com/0xarthurxyz/tldr.git
