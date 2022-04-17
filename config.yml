@@ -15,20 +15,26 @@ googleAnalytics: UA-152084126-5
 
 menu:
     main:
-        - identifier: categories
-          name: Archive
-          url: archives
-          weight: 1
+        # - identifier: categories
+        #   name: Archive
+        #   url: archives
+        #   weight: 1
         # - identifier: Tags
         #   name: Tags
         #   url: /tags
         #   weight: 20
-        - name: who dis?
-          url: about
-          weight: 2
-        - name: Search
-          url: search/
-          weight: 3
+        - name: Standing invitation
+          url: https://gist.github.com/0xarthurxyz/6f8c4469131f7b405925b765d0b21b9c
+          weight: 1
+        # - name: Archive
+        #   url: search/
+        #   weight: 2
+        # - name: Who dis?
+        #   url: about
+        #   weight: 1
+        # - name: Search
+        #   url: search/
+        #   weight: 3
 
 
 taxonomies:
@@ -59,16 +65,16 @@ params:
     profileMode:
         enabled: true
         title: "0xArthur.xyz" # optional default will be site title
-        subtitle: "Crypto PM working on identity for Celo 🧑‍🚀"
+        subtitle: "Crypto/Blockchain PM 🧑‍🚀"
         imageUrl: "https://pbs.twimg.com/profile_images/1433747018468450305/EvOLBFZE_400x400.jpg" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
-        buttons:
-            - name: TLDRs
-              url: /tags/tldr/
-            - name: Noob notes
-              url: /tags/noob-notes/
+        # buttons:
+        #     - name: Standing invitation
+        #       url: https://gist.github.com/0xarthurxyz/6f8c4469131f7b405925b765d0b21b9c
+        #     - name: Noob notes
+        #       url: /tags/noob-notes/
               
 
     # Uncomment if you want posts on the homepage instead of profileMode
@@ -94,6 +100,10 @@ params:
           url: "https://github.com/0xarthurxyz"
         - name: twitter
           url: "https://twitter.com/0xArthurxyz"
+        - name: keybase
+          url: "https://keybase.io/0xarthurxyz"
+        - name: kofi
+          url: "https://ko-fi.com/0xarthurxyz"
 
     editPost:
         URL: "https://github.com/0xarthurxyz/0xArthurxyz.github.io/blob/main/content"
