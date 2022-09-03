@@ -102,8 +102,8 @@ params:
           url: "https://twitter.com/0xArthurxyz"
         - name: keybase
           url: "https://keybase.io/0xarthurxyz"
-        - name: kofi
-          url: "https://ko-fi.com/0xarthurxyz"
+        # - name: kofi
+        #   url: "https://ko-fi.com/0xarthurxyz"
 
     editPost:
         URL: "https://github.com/0xarthurxyz/0xArthurxyz.github.io/blob/main/content"
