@@ -23,7 +23,7 @@ menu:
         #   name: Tags
         #   url: /tags
         #   weight: 20
-        - name: Standing invitation
+        - name: Standing invitation 👋
           url: https://gist.github.com/0xarthurxyz/6f8c4469131f7b405925b765d0b21b9c
           weight: 1
         # - name: Archive
@@ -65,8 +65,8 @@ params:
     profileMode:
         enabled: true
         title: "0xArthur.xyz" # optional default will be site title
-        subtitle: "Crypto/Blockchain PM 🧑‍🚀"
-        imageUrl: "https://pbs.twimg.com/profile_images/1433747018468450305/EvOLBFZE_400x400.jpg" # optional
+        subtitle: "{ shipping products 🚢 }"
+        imageUrl: "https://github.com/0xarthurxyz.png" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -100,8 +100,8 @@ params:
           url: "https://github.com/0xarthurxyz"
         - name: twitter
           url: "https://twitter.com/0xArthurxyz"
-        - name: keybase
-          url: "https://keybase.io/0xarthurxyz"
+        # - name: keybase
+        #   url: "https://keybase.io/0xarthurxyz"
         # - name: kofi
         #   url: "https://ko-fi.com/0xarthurxyz"
 
