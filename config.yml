@@ -65,7 +65,7 @@ params:
     profileMode:
         enabled: true
         title: "0xArthur.xyz" # optional default will be site title
-        subtitle: "{ shipping products 🚢 }"
+        subtitle: "{ shipping developer products 🚢 }"
         imageUrl: "https://github.com/0xarthurxyz.png" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
