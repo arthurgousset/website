@@ -44,7 +44,7 @@ taxonomies:
 
 params:
     env: production
-    title: 0xArthur.xyz
+    title: 0xarthur.xyz
     author: Me
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
