@@ -63,6 +63,17 @@ params:
     # Maths typesetting
     math: true
 
+    comments: true
+    giscus:
+      repo: arthurgousset/website
+      repoID: MDEwOlJlcG9zaXRvcnk0MDM2MzcwMzE=
+      category: Comments
+      categoryID: DIC_kwDOGA8DJ84CdHsV
+      mapping: pathname
+      inputPosition: top
+      theme: preferred_color_scheme
+      lang: en
+
     # Profile Mode
     profileMode:
         enabled: true
