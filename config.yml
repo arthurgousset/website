@@ -65,7 +65,7 @@ params:
     profileMode:
         enabled: true
         title: "Arthur Gousset" # optional default will be site title
-        subtitle: "{ building developer tools 🚢 }"
+        subtitle: "Engineering @ [cLabs](https://twitter.com/cLabs)"
         imageUrl: "https://github.com/arthurgousset.png" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
