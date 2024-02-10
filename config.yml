@@ -108,8 +108,8 @@ params:
         #   url: "https://ko-fi.com/0xarthurxyz"
 
     editPost:
-        URL: "https://github.com/0xarthurxyz/0xArthurxyz.github.io/blob/main/content"
-        Text: "Suggest Changes" # edit text
+        URL: "https://github.com/arthurgousset/website/tree/main/content"
+        Text: "Edit on GitHub" # edit text
         appendFilePath: true # to append file path to Edit link
 
 outputs:
