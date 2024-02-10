@@ -44,7 +44,7 @@ taxonomies:
 
 params:
     env: production
-    title: 0xarthur.xyz
+    title: arthurgousset
     author: Me
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
@@ -65,7 +65,7 @@ params:
     profileMode:
         enabled: true
         title: "Arthur Gousset" # optional default will be site title
-        subtitle: "Engineering @ [cLabs](https://twitter.com/cLabs)"
+        subtitle: "Engineering @ [cLabs](https://twitter.com/cLabs) 🚢"
         imageUrl: "https://github.com/arthurgousset.png" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
