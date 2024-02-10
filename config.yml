@@ -97,9 +97,11 @@ params:
 
     socialIcons: # optional
         - name: github
-          url: "https://github.com/0xarthurxyz"
+          url: "https://github.com/arthurgousset"
         - name: twitter
-          url: "https://twitter.com/0xArthurxyz"
+          url: "https://twitter.com/arthurgoussetx"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/arthurgousset/"
         # - name: keybase
         #   url: "https://keybase.io/0xarthurxyz"
         # - name: kofi
