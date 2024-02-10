@@ -64,9 +64,9 @@ params:
     # Profile Mode
     profileMode:
         enabled: true
-        title: "0xarthur.xyz" # optional default will be site title
+        title: "Arthur Gousset" # optional default will be site title
         subtitle: "{ building developer tools 🚢 }"
-        imageUrl: "https://github.com/0xarthurxyz.png" # optional
+        imageUrl: "https://github.com/arthurgousset.png" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
