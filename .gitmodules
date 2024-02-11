@@ -1,9 +1,3 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
-[submodule "content/posts/noob-notes"]
-	path = content/posts/noob-notes
-	url = https://github.com/0xarthurxyz/noob-notes.git
-[submodule "content/posts/tldr"]
-	path = content/posts/tldr
-	url = https://github.com/0xarthurxyz/tldr.git
