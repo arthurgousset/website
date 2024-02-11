@@ -1,0 +1,13 @@
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+        {{ $iconClass := "fa-solid fa-arrow-up-right-from-square" }} <!-- Default icon class -->
+        {{ if strings.Contains .Destination "twitter.com" }}
+            {{ $iconClass = "fa-brands fa-twitter" }}
+        {{ else if strings.Contains .Destination "github.com" }}
+            {{ $iconClass = "fa-brands fa-github" }}
+        {{ else if strings.Contains .Destination "linkedin.com" }}
+            {{ $iconClass = "fa-brands fa-linkedin" }}
+        {{ end }}
+        <i class="{{ $iconClass }}" style="margin-right: 1px;"></i>
+        {{ .Text | safeHTML }}
+    </a>
+    
