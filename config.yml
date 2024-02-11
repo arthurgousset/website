@@ -46,6 +46,9 @@ params:
     showtoc: false
     tocopen: false
 
+    # RSS setting
+    ShowFullTextinRSS: true
+
     # Maths typesetting
     math: true
 
