@@ -7,7 +7,7 @@ math: true
 ### Cheat Sheets
 
 1. [foundry](https://github.com/arthurgousset/foundry)
-1. [git](https://github.com/arthurgousset/git)
+1. [git](/posts/git/readme)
 1. [javascript](https://github.com/arthurgousset/javascript)
 1. [jest](https://github.com/arthurgousset/jest)
 1. [latex](https://github.com/arthurgousset/latex)
