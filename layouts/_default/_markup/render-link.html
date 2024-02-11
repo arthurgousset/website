@@ -1,7 +1,9 @@
 <a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>
         {{ $iconClass := "fa-solid fa-arrow-up-right-from-square" }} <!-- Default icon class -->
         {{ if strings.Contains .Destination "arthurgousset.com" }}
-            {{ $iconClass = "fa-solid fa-file" }}
+            {{ $iconClass = "fa-regular fa-file" }}
+        {{ else if strings.Contains .Destination "mailto:" }}
+            {{ $iconClass = "fa-regular fa-envelope" }}
         {{ else if strings.Contains .Destination "twitter.com" }}
             {{ $iconClass = "fa-brands fa-twitter" }}
         {{ else if strings.Contains .Destination "github.com" }}

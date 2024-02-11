@@ -4,9 +4,9 @@ draft: false
 comments: false
 ---
 
-💬 **This is a standing invitation: if you want to talk developer tools, I want to talk to you.**
+💬 This is a standing invitation: if you want to talk developer tools, I want to talk to you.**
 
-My Twitter handle is @arthurgoussetx and my Github handle is @arthurgousset.
+My email is [me@opensigma.org](mailto:me@opensigma.org). I read every email I get, and I try to reply to most of them.
 
 - **I like getting messages.** I have never, not even once, regretted getting a message from a startup, engineer, student, or person interested in our industry. There is absolutely nothing you can do in my inbox which will cause me to think poorly of you as a person or make fun of you to my friends. The worst thing that has ever happened from someone sending me a message is me being a bit busy that day and not replying. Feel free to send me messages.
 - **I like reading things.**  If you write something worth reading, tell me. Again, the worst thing that has ever happened as a result of that is that I just don’t read it. All that cost you was a two-line message.
