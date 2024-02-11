@@ -20,18 +20,8 @@ menu:
           url: content
           weight: 1
         - name: Standing invitation 👋
-          url: https://gist.github.com/arthurgousset/6f8c4469131f7b405925b765d0b21b9c
-          weight: 1
-        # - name: Archive
-        #   url: search/
-        #   weight: 2
-        # - name: Who dis?
-        #   url: about
-        #   weight: 1
-        # - name: Search
-        #   url: search/
-        #   weight: 3
-
+          url: standinginvitation
+          weight: 2
 
 taxonomies:
     category: categories
