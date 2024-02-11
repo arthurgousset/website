@@ -151,9 +151,9 @@ markup:
     # anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    lineNos: false
+    # lineNos: true
     # noClasses: false
-    style: dracula
+    style: github-dark
     # style: rrt
     # style: paraiso-dark
     # style: native
