@@ -4,7 +4,7 @@ draft: false
 comments: false
 ---
 
-💬 This is a standing invitation: if you want to talk developer tools, I want to talk to you.**
+💬 This is a standing invitation: if you want to talk developer tools, I want to talk to you.
 
 My email is [me@opensigma.org](mailto:me@opensigma.org). I read every email I get, and I try to reply to most of them.
 
