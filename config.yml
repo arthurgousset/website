@@ -15,14 +15,10 @@ googleAnalytics: UA-152084126-5
 
 menu:
     main:
-        # - identifier: categories
-        #   name: Archive
-        #   url: archives
-        #   weight: 1
-        # - identifier: Tags
-        #   name: Tags
-        #   url: /tags
-        #   weight: 20
+        - identifier: categories
+          name: Content
+          url: content
+          weight: 1
         - name: Standing invitation 👋
           url: https://gist.github.com/arthurgousset/6f8c4469131f7b405925b765d0b21b9c
           weight: 1
