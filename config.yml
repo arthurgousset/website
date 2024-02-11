@@ -38,7 +38,7 @@ params:
 
     ShowReadingTime: true
     ShowPostNavLinks: true
-    ShowBreadCrumbs: true
+    ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     disableScrollToTop: true
     hideSummary: true
