@@ -1,17 +1,21 @@
 <a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>
-        {{ $iconClass := "fa-solid fa-arrow-up-right-from-square" }} <!-- Default icon class -->
-        {{ if strings.Contains .Destination "arthurgousset.com" }}
-            {{ $iconClass = "fa-regular fa-file" }}
-        {{ else if strings.Contains .Destination "mailto:" }}
-            {{ $iconClass = "fa-regular fa-envelope" }}
+    {{/* Initialize $iconClass as empty for internal links */}}
+    {{ $iconClass := "" }}
+    {{ if or (strings.HasPrefix .Destination "http://") (strings.HasPrefix .Destination "https://") }}
+        {{/* Default icon for external links, overridden by specific domains below */}}
+        {{ $iconClass = "fa-solid fa-arrow-up-right-from-square" }}
+        {{ if strings.Contains .Destination "mailto:" }}
+            {{ $iconClass = "fa-regular fa-envelope" }} <!-- Icon for mail links -->
         {{ else if strings.Contains .Destination "twitter.com" }}
-            {{ $iconClass = "fa-brands fa-twitter" }}
+            {{ $iconClass = "fa-brands fa-twitter" }} <!-- Icon for Twitter links -->
         {{ else if strings.Contains .Destination "github.com" }}
-            {{ $iconClass = "fa-brands fa-github" }}
+            {{ $iconClass = "fa-brands fa-github" }} <!-- Icon for GitHub links -->
         {{ else if strings.Contains .Destination "linkedin.com" }}
-            {{ $iconClass = "fa-brands fa-linkedin" }}
+            {{ $iconClass = "fa-brands fa-linkedin" }} <!-- Icon for LinkedIn links -->
         {{ end }}
+    {{ end }}
+    {{ if $iconClass }}
         <i class="{{ $iconClass }}" style="margin-right: 1px;"></i>
-        {{ .Text | safeHTML }}
-    </a>
-    
+    {{ end }}
+    {{ .Text | safeHTML }}
+</a>
