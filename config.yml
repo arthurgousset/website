@@ -52,6 +52,7 @@ params:
     # Maths typesetting
     math: true
 
+    # Comment settings
     comments: true
     giscus:
       repo: arthurgousset/website
@@ -67,29 +68,11 @@ params:
     profileMode:
         enabled: true
         title: "Arthur Gousset" # optional default will be site title
-        subtitle: "Engineering @ [cLabs](https://twitter.com/cLabs) 🚢"
+        subtitle: "Engineering @ cLabs 🚢"
         imageUrl: "https://github.com/arthurgousset.png" # optional
         imageTitle: # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
-        # buttons:
-        #     - name: Standing invitation
-        #       url: https://gist.github.com/0xarthurxyz/6f8c4469131f7b405925b765d0b21b9c
-        #     - name: Noob notes
-        #       url: /tags/noob-notes/
-              
-
-    # Uncomment if you want posts on the homepage instead of profileMode
-    # homeInfoParams:
-    #     Title: "0xArthur.xyz"
-    #     Content: >
-    #         Welcome to demo of hugo's theme PaperMod.
-
-    #         - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-           
-    #         - Do give a 🌟 on Github !
-
-    #         - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 
     assets:
         disableHLJS: true # to disable highlight.js
@@ -100,14 +83,10 @@ params:
     socialIcons: # optional
         - name: "github"
           url: "https://github.com/arthurgousset"
-        - name: "twitter"
-          url: "https://twitter.com/arthurgoussetx"
         - name: "linkedin"
           url: "https://www.linkedin.com/in/arthurgousset/"
-        # - name: keybase
-        #   url: "https://keybase.io/0xarthurxyz"
-        # - name: kofi
-        #   url: "https://ko-fi.com/0xarthurxyz"
+        - name: "twitter"
+          url: "https://twitter.com/arthurgoussetx"
 
     editPost:
         URL: "https://github.com/arthurgousset/website/tree/main/content"
@@ -137,14 +116,6 @@ outputs:
 
 markup:
   highlight:
-    # anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    # lineNos: true
-    # noClasses: false
     style: github-dark
-    # style: rrt
-    # style: paraiso-dark
-    # style: native
-    # style: monokai
-    # style: api
