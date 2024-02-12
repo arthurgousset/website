@@ -20,7 +20,7 @@ menu:
           url: content
           weight: 1
         - name: Standing invitation 👋
-          url: standinginvitation
+          url: invitation
           weight: 2
 
 taxonomies:
