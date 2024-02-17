@@ -4,3 +4,33 @@
 [submodule "content/posts/git"]
 	path = content/posts/git
 	url = git@github.com:arthurgousset/git.git
+[submodule "content/posts/typescript"]
+	path = content/posts/typescript
+	url = git@github.com:arthurgousset/typescript.git
+[submodule "content/posts/latex"]
+	path = content/posts/latex
+	url = git@github.com:arthurgousset/latex.git
+[submodule "content/posts/javascript"]
+	path = content/posts/javascript
+	url = git@github.com:arthurgousset/javascript.git
+[submodule "content/posts/jest"]
+	path = content/posts/jest
+	url = git@github.com:arthurgousset/jest.git
+[submodule "content/posts/foundry"]
+	path = content/posts/foundry
+	url = git@github.com:arthurgousset/foundry.git
+[submodule "content/posts/tmux"]
+	path = content/posts/tmux
+	url = git@github.com:arthurgousset/tmux.git
+[submodule "content/posts/vim"]
+	path = content/posts/vim
+	url = git@github.com:arthurgousset/vim.git
+[submodule "content/posts/yarn"]
+	path = content/posts/yarn
+	url = git@github.com:arthurgousset/yarn.git
+[submodule "content/posts/dune"]
+	path = content/posts/dune
+	url = git@github.com:arthurgousset/dune.git
+[submodule "content/posts/unixshell"]
+	path = content/posts/unixshell
+	url = git@github.com:arthurgousset/unixshell.git

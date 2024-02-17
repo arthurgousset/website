@@ -6,15 +6,17 @@ math: true
 
 ### Cheat Sheets
 
-1. [foundry](https://github.com/arthurgousset/foundry)
+1. [dune](/posts/dune/readme)
+1. [foundry](/posts/foundry/readme)
 1. [git](/posts/git/readme)
-1. [javascript](https://github.com/arthurgousset/javascript)
-1. [jest](https://github.com/arthurgousset/jest)
-1. [latex](https://github.com/arthurgousset/latex)
-1. [tmux](https://github.com/arthurgousset/tmux)
-1. [typescript](https://github.com/arthurgousset/typescript)
-1. [vim](https://github.com/arthurgousset/vim)
-1. [yarn](https://github.com/arthurgousset/yarn)
+1. [javascript](/posts/javascript/readme)
+1. [jest](/posts/jest/readme)
+1. [latex](/posts/latex/readme)
+1. [tmux](/posts/tmux/readme)
+1. [typescript](/posts/typescript/readme)
+1. [unix shell](/posts/unixshell/readme)
+1. [vim](/posts/vim/readme)
+1. [yarn](/posts/yarn/readme)
 
 ### Talks
 
