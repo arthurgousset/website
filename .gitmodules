@@ -34,3 +34,6 @@
 [submodule "content/posts/unixshell"]
 	path = content/posts/unixshell
 	url = git@github.com:arthurgousset/unixshell.git
+[submodule "content/posts/hugo"]
+	path = content/posts/hugo
+	url = git@github.com:arthurgousset/hugo.git

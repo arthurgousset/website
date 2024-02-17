@@ -9,6 +9,7 @@ math: true
 1. [dune](/posts/dune/readme)
 1. [foundry](/posts/foundry/readme)
 1. [git](/posts/git/readme)
+1. [hugo](/posts/hugo/readme)
 1. [javascript](/posts/javascript/readme)
 1. [jest](/posts/jest/readme)
 1. [latex](/posts/latex/readme)
