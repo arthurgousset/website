@@ -22,3 +22,6 @@
 [submodule "content/posts/tmux"]
 	path = content/posts/tmux
 	url = git@github.com:arthurgousset/tmux.git
+[submodule "content/posts/vim"]
+	path = content/posts/vim
+	url = git@github.com:arthurgousset/vim.git
