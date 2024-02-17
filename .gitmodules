@@ -28,3 +28,9 @@
 [submodule "content/posts/yarn"]
 	path = content/posts/yarn
 	url = git@github.com:arthurgousset/yarn.git
+[submodule "content/posts/dune"]
+	path = content/posts/dune
+	url = git@github.com:arthurgousset/dune.git
+[submodule "content/posts/unixshell"]
+	path = content/posts/unixshell
+	url = git@github.com:arthurgousset/unixshell.git

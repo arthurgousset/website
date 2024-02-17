@@ -6,6 +6,7 @@ math: true
 
 ### Cheat Sheets
 
+1. [dune](/posts/dune/readme)
 1. [foundry](/posts/foundry/readme)
 1. [git](/posts/git/readme)
 1. [javascript](/posts/javascript/readme)
@@ -13,6 +14,7 @@ math: true
 1. [latex](/posts/latex/readme)
 1. [tmux](/posts/tmux/readme)
 1. [typescript](/posts/typescript/readme)
+1. [unix shell](/posts/unixshell/readme)
 1. [vim](/posts/vim/readme)
 1. [yarn](/posts/yarn/readme)
 
