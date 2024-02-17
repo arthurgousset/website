@@ -10,3 +10,6 @@
 [submodule "content/posts/latex"]
 	path = content/posts/latex
 	url = git@github.com:arthurgousset/latex.git
+[submodule "content/posts/javascript"]
+	path = content/posts/javascript
+	url = git@github.com:arthurgousset/javascript.git

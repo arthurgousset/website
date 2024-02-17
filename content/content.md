@@ -8,7 +8,7 @@ math: true
 
 1. [foundry](https://github.com/arthurgousset/foundry)
 1. [git](/posts/git/readme)
-1. [javascript](https://github.com/arthurgousset/javascript)
+1. [javascript](/posts/javascript/readme)
 1. [jest](https://github.com/arthurgousset/jest)
 1. [latex](/posts/latex/readme)
 1. [tmux](https://github.com/arthurgousset/tmux)
