@@ -19,3 +19,6 @@
 [submodule "content/posts/foundry"]
 	path = content/posts/foundry
 	url = git@github.com:arthurgousset/foundry.git
+[submodule "content/posts/tmux"]
+	path = content/posts/tmux
+	url = git@github.com:arthurgousset/tmux.git

@@ -11,7 +11,7 @@ math: true
 1. [javascript](/posts/javascript/readme)
 1. [jest](/posts/jest/readme)
 1. [latex](/posts/latex/readme)
-1. [tmux](https://github.com/arthurgousset/tmux)
+1. [tmux](/posts/tmux/readme)
 1. [typescript](/posts/typescript/readme)
 1. [vim](https://github.com/arthurgousset/vim)
 1. [yarn](https://github.com/arthurgousset/yarn)
