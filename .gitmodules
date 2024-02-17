@@ -25,3 +25,6 @@
 [submodule "content/posts/vim"]
 	path = content/posts/vim
 	url = git@github.com:arthurgousset/vim.git
+[submodule "content/posts/yarn"]
+	path = content/posts/yarn
+	url = git@github.com:arthurgousset/yarn.git

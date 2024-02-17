@@ -14,7 +14,7 @@ math: true
 1. [tmux](/posts/tmux/readme)
 1. [typescript](/posts/typescript/readme)
 1. [vim](/posts/vim/readme)
-1. [yarn](https://github.com/arthurgousset/yarn)
+1. [yarn](/posts/yarn/readme)
 
 ### Talks
 
