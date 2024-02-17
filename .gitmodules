@@ -7,3 +7,6 @@
 [submodule "content/posts/typescript"]
 	path = content/posts/typescript
 	url = git@github.com:arthurgousset/typescript.git
+[submodule "content/posts/latex"]
+	path = content/posts/latex
+	url = git@github.com:arthurgousset/latex.git
