@@ -12,7 +12,7 @@ math: true
 1. [jest](https://github.com/arthurgousset/jest)
 1. [latex](https://github.com/arthurgousset/latex)
 1. [tmux](https://github.com/arthurgousset/tmux)
-1. [typescript](https://github.com/arthurgousset/typescript)
+1. [typescript](/posts/typescript/readme)
 1. [vim](https://github.com/arthurgousset/vim)
 1. [yarn](https://github.com/arthurgousset/yarn)
 

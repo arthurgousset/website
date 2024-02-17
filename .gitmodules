@@ -4,3 +4,6 @@
 [submodule "content/posts/git"]
 	path = content/posts/git
 	url = git@github.com:arthurgousset/git.git
+[submodule "content/posts/typescript"]
+	path = content/posts/typescript
+	url = git@github.com:arthurgousset/typescript.git
