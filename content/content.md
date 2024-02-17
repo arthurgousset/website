@@ -6,7 +6,7 @@ math: true
 
 ### Cheat Sheets
 
-1. [foundry](https://github.com/arthurgousset/foundry)
+1. [foundry](/posts/foundry/readme)
 1. [git](/posts/git/readme)
 1. [javascript](/posts/javascript/readme)
 1. [jest](/posts/jest/readme)

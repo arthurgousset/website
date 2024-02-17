@@ -16,3 +16,6 @@
 [submodule "content/posts/jest"]
 	path = content/posts/jest
 	url = git@github.com:arthurgousset/jest.git
+[submodule "content/posts/foundry"]
+	path = content/posts/foundry
+	url = git@github.com:arthurgousset/foundry.git
