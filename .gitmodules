@@ -37,3 +37,6 @@
 [submodule "content/posts/hugo"]
 	path = content/posts/hugo
 	url = git@github.com:arthurgousset/hugo.git
+[submodule "content/posts/algorithms"]
+	path = content/posts/algorithms
+	url = git@github.com:arthurgousset/algorithms.git
