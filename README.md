@@ -31,6 +31,18 @@ To update the submodules, you can run the following command:
 $ git submodule update --remote
 ```
 
+### Adding submodules
+
+```sh
+$ git submodule add {{repository}} [{{path}}]
+```
+
+For example: 
+
+```sh
+$ git submodule add git@github.com:arthurgousset/algorithms.git content/posts/algorithms
+```
+
 ### Running the website locally
 
 To run the website locally, you need to have Hugo installed. You can follow the instructions on the
