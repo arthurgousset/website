@@ -37,10 +37,25 @@ $ git submodule update --remote
 $ git submodule add {{repository}} [{{path}}]
 ```
 
-For example: 
+For example:
 
 ```sh
 $ git submodule add git@github.com:arthurgousset/algorithms.git content/posts/algorithms
+```
+
+### Removing submodules
+
+```sh
+$ git rm {{path}}
+```
+
+This removes the reference to the submodule in `.gitmodules`. Might still need to remove the
+submodule from `.git/config` if it still shows up.
+
+For example:
+
+```sh
+$ git rm content/posts/algorithms
 ```
 
 ### Running the website locally
