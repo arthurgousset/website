@@ -1,9 +1,10 @@
+<!-- Icons: https://fontawesome.com/icons -->
 <a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>
     {{/* Initialize $iconClass as empty for internal links */}}
     {{ $iconClass := "" }}
     {{ if or (strings.HasPrefix .Destination "http://") (strings.HasPrefix .Destination "https://") }}
         {{/* Default icon for external links, overridden by specific domains below */}}
-        {{ $iconClass = "fa-solid fa-arrow-up-right-from-square" }}
+        {{ $iconClass = "fa-solid fa-square-arrow-up-right" }}
         {{ if strings.Contains .Destination "mailto:" }}
             {{ $iconClass = "fa-regular fa-envelope" }} <!-- Icon for mail links -->
         {{ else if strings.Contains .Destination "twitter.com" }}
