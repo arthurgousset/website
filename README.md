@@ -68,3 +68,7 @@ Once you have Hugo installed, you can run the following command to start the dev
 ```bash
 $ hugo server -D
 ```
+
+### Link icons
+
+Customise icon settings in [`render-link.html`](./layouts/_default/_markup/render-link.html).
