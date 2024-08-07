@@ -7,7 +7,7 @@ comments: false
 💬 This is a standing invitation: if you want to talk verifiable computing and zero-knowledge
 cryptography, I want to talk to you.
 
-You can reach me at [hello@arthurgousset.com](mailto:email@arthurgousset.com). I read every message
+You can reach me at [email@arthurgousset.com](mailto:email@arthurgousset.com). I read every message
 I get, and I try to reply to most of them.
 
 - **I like getting messages.** I have never, not even once, regretted getting a message from a
